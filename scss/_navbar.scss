@@ -9,6 +9,7 @@
     font-family: 'lemonmilk';
 }
 #mainNav {
+
     border-bottom: 1px solid fade-out($gray-900, .9);
     background-color: $white;
     @include sans-serif-font;
@@ -18,7 +19,6 @@
         font-weight: 700;
         text-transform: uppercase;
         color: $primary;
-        @include sans-serif-font;
         &:focus,
         &:hover {
             color: darken($primary, .1);
@@ -51,11 +51,11 @@
         .navbar-brand {
             font-family: 'lemonmilk';
              
-//            color: fade-out($white, .3);
-//            &:focus,
-//            &:hover {
-//                color: $white;
-//            }
+            color: fade-out($white, .3);
+            &:focus,
+            &:hover {
+                color: $white;
+            }
         }
         .navbar-nav > li.nav-item > a.nav-link {
             padding: 0.5rem 1rem;
@@ -68,16 +68,19 @@
             }
         }
         &.navbar-shrink {
+                    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
             border-bottom: 1px solid fade-out($gray-900, .9);
             background-color: $white;
             .navbar-brand {
                 font-family: 'lemonmilk';
                  
-//                color: $primary;
-//                &:focus,
-//                &:hover {
-//                    color: darken($primary, .1);
-//                }
+                color: $primary;
+                &:focus,
+                &:hover {
+                    color: darken($primary, .1);
+                }
             }
             .navbar-nav > li.nav-item > a.nav-link,
             .navbar-nav > li.nav-item > a.nav-link:focus {

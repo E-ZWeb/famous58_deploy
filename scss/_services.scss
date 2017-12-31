@@ -1,4 +1,20 @@
 // Styling for the services section
+#services{
+    background-color: #fdb514;
+}
 .service-box {
+    padding-top: 10%;
+      background:  linear-gradient(rgba(253, 181, 20, 0.5), rgba(253, 181, 20, 0.5)), url('../img/header.jpg');
+  background-position: center center;
+    background-attachment: fixed;
+    
+  @include background-cover;
   max-width: 400px;
+    min-height: 300px;
+    text-shadow: 5px;
+    border-radius: 35%;
+}
+
+.text-muted {
+    color: red;
 }
