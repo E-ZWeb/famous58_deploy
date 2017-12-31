@@ -1,6 +1,14 @@
 #contact {
-    background:  linear-gradient(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.5)), url('../img/header.jpg');
+    background-image: url('../img/header.jpg');
     background-position: center center;
     background-attachment: fixed;
     @include background-cover;
+}
+
+.contact-content {
+      margin: 30px;
+  background-color: #ffffff;
+  border: 0;
+  opacity: 0.7;
+    border-radius: 5%;
 }
