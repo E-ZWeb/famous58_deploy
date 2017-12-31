@@ -81,3 +81,20 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: $gray-900;
 }
+
+//@font-face {
+//    font-family: LemonMilk;
+//    src: url("fonts/lemonmilkbold.otf") format("opentype");
+//}
+
+//@include font-face(LemonMilk, fonts/LemonMilk);
+
+@font-face {
+    font-family: "lemonmilk";
+    src: url("/fonts/lemonmilk.woff") format("woff"),
+        url("/fonts/lemonmilk.otf") format("opentype");
+}
+
+.lemonmilk {
+    font-family: 'lemonmilk';
+}
