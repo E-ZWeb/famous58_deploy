@@ -179,6 +179,7 @@
         }
     }
     @media (min-width: 992px) {
+        max-height: 6%;
         border-color: transparent;
         background-color: transparent;
         .navbar-brand {
@@ -201,7 +202,7 @@
             }
         }
         &.navbar-shrink {
-            max-height: 5%;
+            max-height: 6%;
             -webkit-box-shadow: 0 6px 6px -3px black;
             -moz-box-shadow: 0 6px 6px -3px black;
             box-shadow: 0 6px 6px -3px black;    
