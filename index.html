@@ -9,6 +9,8 @@
     <meta name="author" content="">
 
     <title>Famous 58</title>
+<!--    <link rel="stylesheet" type="text/css" href="css/default.css" />-->
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -29,9 +31,7 @@
 <body id="page-top">
 
     <!-- Navigation -->
-    <div style="-webkit-box-shadow: 0 8px 6px -6px #999;
-    -moz-box-shadow: 0 8px 6px -6px #999;
-    box-shadow: 0 8px 6px -6px #999;">
+    <div style="">
         <nav style="" class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container">
                 <a class="navbar-brand js-scroll-trigger lemonmilk" style="text-align: center; line-height: 67%" href="#page-top">
@@ -56,6 +56,17 @@
                             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
                         </li>
                     </ul>
+                    <div class="container">
+                        <div class="">
+                            <div id="sb-search" class="sb-search">
+                                <form>
+                                    <input class="sb-search-input" placeholder="Search..." type="text" value="" name="search" id="search">
+                                    <input class="sb-search-submit" type="submit" value="">
+                                    <span  class="fa fa-search sb-icon-search" style="font-size: 200%;"></span>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -262,25 +273,26 @@
         <div style="padding-top: 1.8%" class="text-center">
             <div class="text-center">
                 <div style="word-spacing: 5px;" class="text-center">
-                    <a class="js-scroll-trigger bottom-nav-text" href="#about"> About </a><i style="font-size: 60%;" class="fa fa-circle bottom-nav-text" aria-hidden="true"></i>
+                    <a class="js-scroll-trigger bottom-nav-text" href="#about"> About</a> <i style="font-size: 60%;" class="fa fa-circle bottom-nav-text" aria-hidden="true"></i>
 
-                    <a class=" js-scroll-trigger bottom-nav-text" href="#services"> Services </a><i style="font-size: 60%;" class="fa fa-circle bottom-nav-text" aria-hidden="true"></i>
+                    <a class=" js-scroll-trigger bottom-nav-text" href="#services"> Services</a> <i style="font-size: 60%;" class="fa fa-circle bottom-nav-text" aria-hidden="true"></i>
 
-                    <a class=" js-scroll-trigger bottom-nav-text" href="#portfolio"> Portfolio </a><i style="font-size: 60%;" class="fa fa-circle bottom-nav-text" aria-hidden="true"></i>
+                    <a class=" js-scroll-trigger bottom-nav-text" href="#portfolio"> Portfolio</a> <i style="font-size: 60%;" class="fa fa-circle bottom-nav-text" aria-hidden="true"></i>
 
-                    <a class=" js-scroll-trigger bottom-nav-text" href="#contact"> Contact </a>
+                    <a class=" js-scroll-trigger bottom-nav-text" href="#contact"> Contact</a>
 
                 </div>
                 <hr class="light my-4">
 
-            </div>               
+            </div>
         </div>
         <div class="text-center" style="font-size: 200%;">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-youtube-play"></a>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube-play"></a>
         </div>
     </div>
+
 
     <script>
         // When the user scrolls down 20px from the top of the document, show the button
@@ -315,6 +327,12 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/uisearch.js"></script>
+    <script>
+        new UISearch(document.getElementById('sb-search'));
+
+    </script>
 
 </body>
 
