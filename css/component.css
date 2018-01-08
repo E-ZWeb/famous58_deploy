@@ -37,7 +37,7 @@
 	z-index: 10;
 	padding: 20px 65px 20px 20px;
 	font-family: inherit;
-	font-size: 21px;
+	font-size: 100%;
 	color: #bf1e2e;
 /*    text-shadow: 1px 1px 1px black;*/
 }
