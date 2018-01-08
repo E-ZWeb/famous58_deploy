@@ -31,13 +31,13 @@
 	border: none;
 	outline: none;
 	background: transparent;
-	width: 100%;
+	width: 50%;
 	height: 60px;
 	margin: 0;
 	z-index: 10;
-	padding: 20px 65px 20px 20px;
+	padding: 10px 65px 20px 20px;
 	font-family: inherit;
-	font-size: 100%;
+	font-size: 90%;
 	color: #bf1e2e;
 /*    text-shadow: 1px 1px 1px black;*/
 }
