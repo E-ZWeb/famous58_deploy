@@ -199,9 +199,9 @@
             }
         }
         &.navbar-shrink {
-            -webkit-box-shadow: 0 8px 10px -2px black;
-            -moz-box-shadow: 0 8px 10px -2px black;
-            box-shadow: 0 8px 10px -2px black;
+            -webkit-box-shadow: 0 6px 6px -3px black;
+            -moz-box-shadow: 0 6px 6px -3px black;
+            box-shadow: 0 6px 6px -3px black;
             border-bottom: 1px solid fade-out($gray-900, .9);
             background-color: $white;
             .navbar-brand {
