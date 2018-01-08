@@ -39,7 +39,7 @@
 	font-family: inherit;
 	font-size: 20px;
 	color: #bf1e2e;
-    text-shadow: 2px 2px 2px black;
+/*    text-shadow: 1px 1px 1px black;*/
 }
 
 .sb-search-input::-webkit-input-placeholder {
