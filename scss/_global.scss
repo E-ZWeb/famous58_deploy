@@ -106,21 +106,22 @@ body {
     /* Remove borders */
     outline: 3px;
     /* Remove outline */
-    background-color: gray;
+    background-color: transparent;
     /* Set a background color */
     color: white;
     /* Text color */
     cursor: pointer;
     /* Add a mouse pointer on hover */
-    padding: 15px;
+    padding: 1%;
     /* Some padding */
-    border-radius: 10px;
     /* Rounded corners */
+    border: none;
     z-index: 9999;
     /* Keep on top of everything */
 }
 
 #myBtn:hover {
-    background-color: #555;
+    background-color: transparent;
+    color: #bf1e2e;
     /* Add a dark-grey background on hover */
 }
