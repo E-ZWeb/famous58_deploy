@@ -10,6 +10,8 @@
 }
 
 #mainNav {
+    
+//    max-height: 5%;
 //    .sb-search {
 //        position: relative;
 //        margin-top: 10px;
@@ -199,9 +201,10 @@
             }
         }
         &.navbar-shrink {
+            max-height: 5%;
             -webkit-box-shadow: 0 6px 6px -3px black;
             -moz-box-shadow: 0 6px 6px -3px black;
-            box-shadow: 0 6px 6px -3px black;
+            box-shadow: 0 6px 6px -3px black;    
             border-bottom: 1px solid fade-out($gray-900, .9);
             background-color: $white;
             .navbar-brand {
