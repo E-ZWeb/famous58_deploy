@@ -56,16 +56,16 @@
                             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
                         </li>
                     </ul>
-<!--                    <div class="col-sm-3 col-md-3">-->
-                        <form style="float: left; width: 100%;" class="navbar-form" role="search">
+                    <div class="col-md-8" style="height: 0%; width: 100%; float: left;" >
+                        <form  class="navbar-form" style="" role="search">
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Search" name="q">
-                                <div class="input-group-btn">
-                                    <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                                <input  type="text" class="form-control" placeholder="Search" name="q" style="float: left; border-radius: 20px; background-color: #d9d9d9; size z-index: -1; left: 6%;">
+                                <div class="btn-default" style="z-index: 100; height: 100%">
+                                    <button class="btn btn-default" type="submit" style="z-index: 10000; right: 20%;"><i class="fa fa-search"></i></button>
                                 </div>
                             </div>
                         </form>
-<!--                    </div>-->
+                    </div>
                     <!--
                     <div class="container">
                         <div class="">
@@ -345,7 +345,11 @@
         new UISearch(document.getElementById('sb-search'));
 
     </script>
-
+<script>
+    function hideserch = {
+ document.getElementById("serch").style = "visibility: hidden;";
+    }
+</script>
 </body>
 
 </html>
