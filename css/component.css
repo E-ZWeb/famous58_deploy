@@ -98,7 +98,7 @@
 
 .sb-icon-search:before {
 	content: "\e000";
-}
+} 
 
 /* Open state */
 .sb-search.sb-search-open,
