@@ -120,3 +120,68 @@
 .no-js .sb-search .sb-search-submit {
     background-color: transparent;
 }
+
+/*Long Dong Silver*/
+.dong {
+    right: 7%;
+}
+.donger {
+    width: 50%;
+}
+    @media only screen and (max-width: 960px) {
+        .dong {
+            right: 8.6%;
+        }
+        .donger {
+            width: 100%;
+        }
+    }
+    @media only screen and (max-width: 550px) {
+        .dong {
+            right: 9%;
+        }
+    }
+        .donger {
+            width: 100%;
+        }
+    @media only screen and (max-width: 500px) {
+        .dong {
+            right: 10%;
+        }
+    }
+        .donger {
+            width: 100%;
+        }
+    @media only screen and (max-width: 414px) {
+        .dong {
+            right: 12%;
+        }
+    }
+        .donger {
+            width: 100%;
+        }
+    @media only screen and (max-width: 360px) {
+        .dong {
+            right: 13%;
+        }
+    }
+        .donger {
+            width: 100%;
+        }
+    @media only screen and (max-width: 320px) {
+        .dong {
+            right: 15%;
+        }
+    }
+        .donger {
+            width: 100%;
+        }
+    @media only screen and (max-width: 280px) {
+        .dong {
+            right: 16%;
+        }
+    }
+        .donger {
+            width: 100%;
+        }
+}

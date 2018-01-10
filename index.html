@@ -10,7 +10,7 @@
 
     <title>Famous 58</title>
     <!--    <link rel="stylesheet" type="text/css" href="css/default.css" />-->
-<!--    <link rel="stylesheet" type="text/css" href="css/component.css" />-->
+    <!--    <link rel="stylesheet" type="text/css" href="css/component.css" />-->
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -56,16 +56,22 @@
                             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
                         </li>
                     </ul>
-                    <div class="col-md-8" style="height: 0%; width: 100%; float: left;" >
-                        <form  class="navbar-form" style="" role="search">
-                            <div class="input-group">
-                                <input  type="text" class="form-control" placeholder="Search" name="q" style=" border-radius: 20px; background-color: #d9d9d9; z-index: -1; position: relative;">
-                                <div class="btn-default dong" style="z-index: 100; height: 100%; position: relative; background-color: transparent;">
-                                    <button class="btn btn-default" type="submit" style="z-index: 10000; right: 50%; background: none; background-color: transparent;"><i class="fa fa-search"></i></button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                    <style>
+                        input[type=text] {
+                            width: 130px;
+                            -webkit-transition: width 0.4s ease-in-out;
+                            transition: width 0.4s ease-in-out;
+                            border-radius: 15px
+                        }
+
+                        /* When the input field gets focus, change its width to 100% */
+
+                        input[type=text]:focus {
+                            width: 100%;
+                        }
+
+                    </style>
+                    <input type="text" name="search" placeholder="Search..">
                     <!--
                     <div class="container">
                         <div class="">
@@ -84,6 +90,7 @@
         </nav>
     </div>
     <a id="myBtn" class="btn js-scroll-trigger" href="#page-top"><i style="font-size: 200%;" class="fa fa-chevron-up" aria-hidden="true"></i><br>Top</a>
+
 
     <header class="masthead text-center text-white d-flex">
         <div class="container my-auto" id="meme">
@@ -345,11 +352,12 @@
         new UISearch(document.getElementById('sb-search'));
 
     </script>
-<script>
-    function hideserch = {
- document.getElementById("serch").style = "visibility: hidden;";
-    }
-</script>
+    <script>
+        function hideserch = {
+            document.getElementById("serch").style = "visibility: hidden;";
+        }
+
+    </script>
 </body>
 
 </html>
