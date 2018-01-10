@@ -4,7 +4,9 @@
     src: url("/fonts/lemonmilk.woff") format("woff"),
     url("/fonts/lemonmilk.otf") format("opentype");
 }
-
+.dong {
+    right: 7%;
+}
 .lemonmilk {
     font-family: 'lemonmilk';
 }
@@ -224,6 +226,41 @@
                     color: $primary;
                 }
             }
+        }
+    }
+    @media only screen and (max-width: 960px) {
+        .dong {
+            right: 8.6%;
+        }
+    }
+    @media only screen and (max-width: 550px) {
+        .dong {
+            right: 9%;
+        }
+    }
+    @media only screen and (max-width: 500px) {
+        .dong {
+            right: 10%;
+        }
+    }
+    @media only screen and (max-width: 414px) {
+        .dong {
+            right: 12%;
+        }
+    }
+    @media only screen and (max-width: 360px) {
+        .dong {
+            right: 13%;
+        }
+    }
+    @media only screen and (max-width: 320px) {
+        .dong {
+            right: 15%;
+        }
+    }
+    @media only screen and (max-width: 280px) {
+        .dong {
+            right: 16%;
         }
     }
 }
