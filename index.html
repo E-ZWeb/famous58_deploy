@@ -56,11 +56,11 @@
                             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
                         </li>
                     </ul>
-                        <input type="text" name="search" placeholder="  Search...">
-                    
+                    <form id="frmSearch" method="get" action="https://www.google.com/search" style="" />
+                    <input id="txtSearch" type="text" name="serach_bar" placeholder="  Search...">
                     <style>
                         input[type=text] {
-                            width: 100px;
+                            width: 50%;
                             -webkit-transition: width 0.4s ease-in-out;
                             transition: width 0.4s ease-in-out;
                             border-radius: 15px
@@ -69,25 +69,25 @@
                         /* When the input field gets focus, change its width to 100% */
 
                         input[type=text]:focus {
-                            width: 30%;
+                            width: 150%;
                         }
+
                         @media only screen and (max-width: 960px) {
                             input[type=text] {
                                 width: 130px;
                                 -webkit-transition: width 0.4s ease-in-out;
                                 transition: width 0.4s ease-in-out;
-                                border-radius: 15px
+                                border-radius: 15px;
                             }
 
                             /* When the input field gets focus, change its width to 100% */
-
                             input[type=text]:focus {
-                                width: 99%;
+                                width: 98%;
                             }
                         }
 
                     </style>
-                    
+
                     <!--
                     <div class="container">
                         <div class="">
@@ -102,7 +102,7 @@
                     </div>
 -->
                 </div>
-            
+
             </div>
         </nav>
     </div>
@@ -369,9 +369,10 @@
         new UISearch(document.getElementById('sb-search'));
 
     </script>
-    <script>
-        function hideserch = {
-            document.getElementById("serch").style = "visibility: hidden;";
+    <script type="text/javascript">
+        document.getElementById('frmSearch').onsubmit = function() {
+            window.location = 'http://www.google.com/search?q=site:rustyraptor.github.com ' + document.getElementById('txtSearch').value;
+            return false;
         }
 
     </script>
