@@ -112,7 +112,7 @@
         <div class="container my-auto" id="meme">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
-                    <h1 class="text-uppercase lemonmilk">
+                    <h1 class="text-uppercase lemonmilk" id="text" style="font-size: 360%;">
                         No time to be unknown.<br>Get the attention you deserve to own.
                     </h1>
                     <hr>
@@ -139,35 +139,35 @@
     </section>
 
     <section id="services" class="center-block">
-        <div class="container">
-            <div class="row">
+                    <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">At Your Service</h2>
+                    <h3 class="section-heading" style="color: white;">Everyday we strive to give our best and our core values guide us to what we aspire to be. </h3>
                     <hr class="my-4">
                 </div>
             </div>
+        <div class="container">
         </div>
         <div class="container center-block">
             <div class="row center-block">
                 <div class="col-lg-4 col-md-6 text-center center-block">
                     <div class="service-box mt-5 mx-auto">
-                        <i style="font-size: 700%" class="fab fa-modx"></i>
-                        <h3 class="mb-3">Branding</h3>
-                        <p class="mb-0">From Name To Its Look, Let's Bring Your Brand To Life!</p>
+                        <i style="font-size: 700%" class="fas fa-users"></i>
+                        <h3 class="mb-3">Teamwork</h3>
+                        <p class="mb-0">This is how we roll! With teamwork, ideas flourish, skills are integrated, efficiency is encouraged, and a common goal is shared.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 text-center">
                     <div class="service-box mt-5 mx-auto">
-                        <i style="font-size: 700%" class="fas fa-pencil-alt"></i>
-                        <h3 class="mb-3">Design And Content</h3>
-                        <p class="mb-0">From Copywriting To Visualization, Let Us Get Creative Together To Give Your Brand The Voice And Story It Deserves.</p>
+                        <i style="font-size: 700%" class="fas fa-handshake"></i>
+                        <h3 class="mb-3">Partnership</h3>
+                        <p class="mb-0">We aim to be a trusted partner who cares for our client’s needs. We not only want to create winning brands but also winning relationships for a harmonious brand building process.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 text-center">
                     <div class="service-box mt-5 mx-auto">
-                        <i style="font-size: 700%" class="fas fa-globe"></i>
-                        <h3 class="mb-3">Digital</h3>
-                        <p class="mb-0">As Content Consumption Shifts To A New Space, Let's Propel Your Brand Beyond Instagram-Worthy. More Than Going Viral And Creating Buzz, Let's Lead Conversations. </p>
+                        <i style="font-size: 700%" class="fas fa-heart"></i>
+                        <h3 class="mb-3">Passion</h3>
+                        <p class="mb-0">It is where we get the excitement, motivation, willingness to put in the extra effort and it enhances our creative flow. When you put your heart in everything you do, everything else that’s good will follow! </p>
                     </div>
                 </div>
                 </div>
@@ -176,16 +176,16 @@
             <div class="row center-block">
                 <div class="col-lg-6 col-md-9 text-center">
                     <div class="service-box mt-5 mx-auto">
-                        <i style="font-size: 700%" class="fas fa-bullseye"></i>
-                        <h3 class="mb-3">Our Focus</h3>
-                        <p class="mb-0"> Is To Create Meaningful Connetions For Your Brand And People - No Matter The Scale, Budget, And Timings. Let's Set Everything In Motion To Give Your Brand The Value It Deserves.</p>
+                        <i style="font-size: 700%" class="far fa-circle"></i>
+                        <h3 class="mb-3">Open Mind</h3>
+                        <p class="mb-0"> We are artistic explorers with a playful mind who are brave to embrace new things and different ideas. An open mind is where the big idea is.</p>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 text-center">
+                <div class="col-lg-6 col-md-9 text-center">
                     <div class="service-box mt-5 mx-auto">
-                        <i style="font-size: 700%" class="fas fa-heart"></i>
-                        <h3 class="mb-3">Our Purpose</h3>
-                        <p class="mb-0">Is To Be A Reliable Partner, Open And Responsive, Creating A New Kind Of Advertising.</p>
+                        <i style="font-size: 700%" class="fas fa-shield-alt"></i>
+                        <h3 class="mb-3">Integrity</h3>
+                        <p class="mb-0">We do things in an honest, ethical and responsible way in all our interactions or behavior with the client, our team, suppliers and to the wider community.</p>
                     </div>
                 </div>
             </div>
@@ -394,6 +394,65 @@
         }
 
     </script>
+    <script>// type anything here
+const text = 'No time to be unknown. \n Get the attention you deserve to own.';
+
+// this function turns a string into an array
+const createLetterArray = (string) => {
+  return string.split('');
+}
+
+// this function creates letter layers wrapped in span tags
+const createLetterLayers = (array) => {
+  return array.map((letter) => {
+      let layer = '';
+      //specify # of layers per letter
+      for (let i = 1; i <= 2; i++) {
+        // if letter is a space
+        if(letter == ' '){
+          layer += '<span class="space"></span>';
+        }else{
+          layer += '<span class="letter-'+i+'">'+letter+'</span>';
+        }
+      }
+      return layer;
+  });
+}
+
+// this function wraps each letter in a parent container
+const createLetterContainers = (array) => {
+  return array.map((item) => {
+    let container = '';
+    container += '<div class="wrapper">'+item+'</div>';
+    return container;
+  });
+}
+
+// use a promise to output text layers into DOM first
+const outputLayers = new Promise(function(resolve, reject) {
+      document.getElementById('text').innerHTML = createLetterContainers(createLetterLayers(createLetterArray(text))).join('');
+      resolve();
+});
+
+// then adjust width and height of each letter
+const spans = Array.prototype.slice.call(document.getElementsByTagName('span'));
+outputLayers.then(() => {
+    return spans.map((span) => {
+      setTimeout(() => {
+        span.parentElement.style.width = span.offsetWidth+'px';
+        span.parentElement.style.height = span.offsetHeight+'px';
+      }, 250);
+    });
+}).then(() => {
+    // then slide letters into view one at a time
+    let time = 250;
+    return spans.map((span) => {
+      time += 75;
+      setTimeout(() => {
+        span.parentElement.style.top = '0px';
+      }, time);
+    });
+});</script>
 </body>
 
 </html>

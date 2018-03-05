@@ -11,7 +11,22 @@ header.masthead {
     margin-bottom: 30px;
   }
   h1 {
-    font-size: 2rem;
+      color: white;
+        /* First we need to help some browsers along for this to work.
+     Just because a vendor prefix is there, doesn't mean it will
+     work in a browser made by that vendor either, it's just for
+     future-proofing purposes I guess. */
+  -o-transition:1s;
+  -ms-transition:1s;
+  -moz-transition:1s;
+  -webkit-transition:1s;
+  /* ...and now for the proper property */
+  transition:1s;
+    font-size: 1rem;
+
+  }
+  h1:hover {
+    color: #bf1e2e;
   }
   p {
     font-weight: 300;
@@ -27,12 +42,66 @@ header.masthead {
     padding-top: 0;
     padding-bottom: 0;
     h1 {
-      font-size: 3rem;
+      font-size: 2rem;
     }
   }
   @media (min-width: 1200px) {
     h1 {
       font-size: 4rem;
+    }
+  }
+}
+
+$background: #efefef;
+$primary_font: 'Fredoka One', sans-serif;
+$first_color: rgba(0, 0, 255, 0.5);
+$second_color: rgba(255, 0, 0, 0.5);
+
+#text {
+  transform: translateY(-50%);
+  &:hover {
+    cursor: default;
+  }
+
+  .wrapper {
+    display: inline-block;
+    top: -900px;
+    position: relative;
+    height: 150px; /* default */
+    width: 90px; /* default */
+    transition: ease 0.3s all;
+
+    span {
+      position: absolute;
+      top:0;
+      right:0;
+
+      transition: ease 0.3s all;
+
+      &.letter-2 {
+        color: $primary;
+      }
+
+      &.letter-1 {
+        color: #fdb514;
+        z-index: 1;
+
+        &:hover {
+           top: -3px;
+           right: -3px;
+
+           ~ .letter-2 {
+             top: 3px;
+             right: 3px;
+           }
+        }
+      }
+
+      &.space {
+        padding: 0;
+        min-width: 30px;
+        display: inline-block;
+      }
     }
   }
 }
