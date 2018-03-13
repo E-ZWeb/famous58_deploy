@@ -1,0 +1,19 @@
+// Styling for the services section
+#cores{
+    background-color: #bf1e2e;
+
+}
+.cores-box {
+    padding-top: 30%;
+
+  @include background-cover;
+  max-width: 400px;
+    min-height: 300px;
+    text-shadow: 5px;
+    border-radius: 35%;
+    color: white;
+}
+
+.text-muted {
+    color: yellow;
+}
