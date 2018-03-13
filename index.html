@@ -364,11 +364,16 @@
                 <a href="#" style="color: white;" class="fab fa-youtube"></a>
             </div>
             <div id="footer" style="color: grey; font-size: 60%; font-family: sans-serif; " xmlns:dc="http://purl.org/dc/elements/1.1/">
-                <p id="copyright" property="dc:rights">Copyright. &copy;
-                    <span property="dc:dateCopyrighted"><script type="text/javascript">
-  document.write(new Date().getFullYear());
-</script></span>
+                <p id="copyright" property="dc:rights">
+                Copyright. © 2018 Famous 58. All rights reserved.
+<!--
+                Copyright. &copy;
+                <span property="dc:dateCopyrighted">
+                <script type="text/javascript">
+                document.write(new Date().getFullYear());
+                </script></span>
                     <span property="dc:publisher">Famous 58. All rights reserved.</span>
+-->
                 </p>
             </div>
         </div>
@@ -418,72 +423,72 @@
             }
         </script>
     </body>
-<script>
-            if (jQuery(window).innerWidth() > 1250) {
+    <script>
+        if (jQuery(window).innerWidth() > 1250) {
 
 
-                // type anything here
-                const text = 'No time to be unknown. \n Get the attention you deserve to own.';
+            // type anything here
+            const text = 'No time to be unknown. \n Get the attention you deserve to own.';
 
-                // this function turns a string into an array
-                const createLetterArray = (string) => {
-                    return string.split('');
-                }
-
-                // this function creates letter layers wrapped in span tags
-                const createLetterLayers = (array) => {
-                    return array.map((letter) => {
-                        let layer = '';
-                        //specify # of layers per letter
-                        for (let i = 1; i <= 2; i++) {
-                            // if letter is a space
-                            if (letter == ' ') {
-                                layer += '<span class="space"></span>';
-                            } else {
-                                layer += '<span class="letter-' + i + '">' + letter + '</span>';
-                            }
-                        }
-                        return layer;
-                    });
-                }
-
-                // this function wraps each letter in a parent container
-                const createLetterContainers = (array) => {
-                    return array.map((item) => {
-                        let container = '';
-                        container += '<div class="wrapper">' + item + '</div>';
-                        return container;
-                    });
-                }
-
-                // use a promise to output text layers into DOM first
-                const outputLayers = new Promise(function(resolve, reject) {
-                    document.getElementById('text').innerHTML = createLetterContainers(createLetterLayers(createLetterArray(text))).join('');
-                    resolve();
-                });
-
-                // then adjust width and height of each letter
-                const spans = Array.prototype.slice.call(document.getElementsByTagName('span'));
-                outputLayers.then(() => {
-                    return spans.map((span) => {
-                        setTimeout(() => {
-                            span.parentElement.style.width = span.offsetWidth + 'px';
-                            span.parentElement.style.height = span.offsetHeight + 'px';
-                        }, 250);
-                    });
-                })
-                //                .then(() => {
-                //                // then slide letters into view one at a time
-                //                let time = 250;
-                //                return spans.map((span) => {
-                //                    time += 75;
-                //                    setTimeout(() => {
-                //                        span.parentElement.style.top = '0px';
-                //                    }, time);
-                //                });
-                //            });
-            } else {
-                console.log("memes")
+            // this function turns a string into an array
+            const createLetterArray = (string) => {
+                return string.split('');
             }
-        </script>
+
+            // this function creates letter layers wrapped in span tags
+            const createLetterLayers = (array) => {
+                return array.map((letter) => {
+                    let layer = '';
+                    //specify # of layers per letter
+                    for (let i = 1; i <= 2; i++) {
+                        // if letter is a space
+                        if (letter == ' ') {
+                            layer += '<span class="space"></span>';
+                        } else {
+                            layer += '<span class="letter-' + i + '">' + letter + '</span>';
+                        }
+                    }
+                    return layer;
+                });
+            }
+
+            // this function wraps each letter in a parent container
+            const createLetterContainers = (array) => {
+                return array.map((item) => {
+                    let container = '';
+                    container += '<div class="wrapper">' + item + '</div>';
+                    return container;
+                });
+            }
+
+            // use a promise to output text layers into DOM first
+            const outputLayers = new Promise(function(resolve, reject) {
+                document.getElementById('text').innerHTML = createLetterContainers(createLetterLayers(createLetterArray(text))).join('');
+                resolve();
+            });
+
+            // then adjust width and height of each letter
+            const spans = Array.prototype.slice.call(document.getElementsByTagName('span'));
+            outputLayers.then(() => {
+                return spans.map((span) => {
+                    setTimeout(() => {
+                        span.parentElement.style.width = span.offsetWidth + 'px';
+                        span.parentElement.style.height = span.offsetHeight + 'px';
+                    }, 250);
+                });
+            })
+            //                .then(() => {
+            //                // then slide letters into view one at a time
+            //                let time = 250;
+            //                return spans.map((span) => {
+            //                    time += 75;
+            //                    setTimeout(() => {
+            //                        span.parentElement.style.top = '0px';
+            //                    }, time);
+            //                });
+            //            });
+        } else {
+            console.log("memes")
+        }
+    </script>
 </html>
