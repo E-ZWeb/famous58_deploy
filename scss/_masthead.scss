@@ -1,107 +1,186 @@
 // Styling for the masthead
 header.masthead {
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 56px);
-  background-image: url('../img/header.jpg');
-  background-position: center center;
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 56px);
+    background-image: url('../img/header.jpg');
+    background-position: center center;
     background-attachment: fixed;
-  @include background-cover;
-  hr {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  h1 {
-      color: white;
+    @include background-cover;
+    hr {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    h1 {
+        color: white;
         /* First we need to help some browsers along for this to work.
      Just because a vendor prefix is there, doesn't mean it will
      work in a browser made by that vendor either, it's just for
      future-proofing purposes I guess. */
-  -o-transition:1s;
-  -ms-transition:1s;
-  -moz-transition:1s;
-  -webkit-transition:1s;
-  /* ...and now for the proper property */
-  transition:1s;
-    font-size: 1rem;
+        -o-transition: 1s;
+        -ms-transition: 1s;
+        -moz-transition: 1s;
+        -webkit-transition: 1s;
+        /* ...and now for the proper property */
+        transition: 1s;
+        font-size: 1rem;
 
-  }
-  h1:hover {
-    color: #bf1e2e;
-  }
-  p {
-    font-weight: 300;
-  }
-  @media (min-width: 768px) {
+    } //  h1:hover {
+    //    color: #bf1e2e;
+    //  }
     p {
-      font-size: 1.15rem;
+        font-weight: 300;
     }
-  }
-  @media (min-width: 992px) {
-    height: 100vh;
-    min-height: 650px;
-    padding-top: 0;
-    padding-bottom: 0;
-    h1 {
-      font-size: 2rem;
+    @media (max-width: 10px) {
+        #text {
+            visibility: hidden;
+        }
+        #shleam {
+            visibility: visible;
+        }
     }
-  }
-  @media (min-width: 1200px) {
-    h1 {
-      font-size: 4rem;
+    @media (min-width: 768px) {
+        p {
+            font-size: 1.15rem;
+        }
     }
-  }
+    @media (min-width: 992px) {
+        height: 100vh;
+        min-height: 650px;
+        padding-top: 0;
+        padding-bottom: 0;
+        h1 {
+            font-size: 2rem;
+        }
+    }
+    @media (min-width: 1250px) {
+        #shleam {
+            visibility: hidden;
+        }
+        #text {
+    .wrapper {
+        display: inline-block;
+//        top: -900px;
+        position: relative;
+        height: 150px;
+        /* default */
+        width: 90px;
+        /* default */
+        transition: ease 0.3s all;
+
+        span {
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            transition: ease 0.3s all;
+
+            &.letter-2 {
+                color: $primary;
+            }
+
+            &.letter-1 {
+                color: #fdb514;
+                z-index: 1;
+
+                &:hover {
+                    top: -3px;
+                    right: -3px;
+
+                    ~ .letter-2 {
+                        top: 3px;
+                        right: 3px;
+                    }
+                }
+            }
+
+            &.space {
+                padding: 0;
+                min-width: 30px;
+                display: inline-block;
+            }
+        }
+    }
+}
+        h1 {
+            font-size: 4rem;
+        }
+    }
 }
 
 $background: #efefef;
-$primary_font: 'Fredoka One', sans-serif;
-$first_color: rgba(0, 0, 255, 0.5);
-$second_color: rgba(255, 0, 0, 0.5);
+$primary_font: 'Fredoka One',
+sans-serif;
+$first_color: rgba(0,
+0,
+255,
+0.5);
+$second_color: rgba(255,
+0,
+0,
+0.5);
+//.letter-1 {
+//    color: #fdb514;
+//    z-index: 2;
+//    transition: ease 0.3s all;
+//
+//    &:hover {
+//        top: -3px;
+//        right: -3px;
+//    }
+//}
+//
+//.letter-2 {
+//    z-index: 1;
+//    transition: ease 0.3s all;
+//    color: $primary;
+//    &:hover {
+//        top: 3px;
+//        right: 3px;
+//    }
+//}
 
 #text {
-  transform: translateY(-50%);
-  &:hover {
-    cursor: default;
-  }
-
-  .wrapper {
-    display: inline-block;
-    top: -900px;
-    position: relative;
-    height: 150px; /* default */
-    width: 90px; /* default */
-    transition: ease 0.3s all;
-
-    span {
-      position: absolute;
-      top:0;
-      right:0;
-
-      transition: ease 0.3s all;
-
-      &.letter-2 {
-        color: $primary;
-      }
-
-      &.letter-1 {
-        color: #fdb514;
-        z-index: 1;
-
-        &:hover {
-           top: -3px;
-           right: -3px;
-
-           ~ .letter-2 {
-             top: 3px;
-             right: 3px;
-           }
-        }
-      }
-
-      &.space {
-        padding: 0;
-        min-width: 30px;
+    .wrapper {
         display: inline-block;
-      }
+//        top: -900px;
+        position: relative;
+        height: 150px;
+        /* default */
+        width: 90px;
+        /* default */
+        transition: ease 0.3s all;
+
+        span {
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            transition: ease 0.3s all;
+
+            &.letter-2 {
+                color: $primary;
+            }
+
+            &.letter-1 {
+                color: #fdb514;
+                z-index: 1;
+
+                &:hover {
+                    top: -3px;
+                    right: -3px;
+
+                    ~ .letter-2 {
+                        top: 3px;
+                        right: 3px;
+                    }
+                }
+            }
+
+            &.space {
+                padding: 0;
+                min-width: 30px;
+                display: inline-block;
+            }
+        }
     }
-  }
 }
