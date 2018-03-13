@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,10 +11,10 @@
     <title>Famous 58</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="fontawesome-free-5.0.6/web-fonts-with-css/css/fontawesome-all.min.css" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
@@ -23,289 +23,474 @@
 
     <!-- Custom styles for this template -->
     <link href="css/creative.css" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
-</head>
+    <body id="page-top">
 
-<body id="page-top">
+        <!-- Navigation -->
+        <div style="">
+            <nav style="" class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+                <div class="container">
+                    <a class="navbar-brand js-scroll-trigger lemonmilk" style="text-align: center; line-height: 67%" href="#page-top">
+                        <size style="font-size: 95%; color: #fdb514">Famous</size><br>
+                        <size style="font-size: 70%; color: #bf1e2e">Fiftyeight</size>
+                    </a>
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#services">Core Values</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#cores">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                        <form id="frmSearch" method="get" action="https://www.google.com/search" style="" />
+                        <input id="txtSearch" type="text" name="serach_bar" placeholder="  Search...">
+                        <style>
+                            input[type=text] {
+                                width: 50%;
+                                -webkit-transition: width 0.4s ease-in-out;
+                                transition: width 0.4s ease-in-out;
+                                border-radius: 15px
+                            }
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand js-scroll-trigger lemonmilk" style="text-align: center; line-height: 67%" href="#page-top">
-                <size style="font-size: 95%; color: #fdb514">Famous</size><br>
-                <size style="font-size: 70%; color: #bf1e2e">Fiftyeight</size>
-            </a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <a id="myBtn" class="btn btn-primary btn-sm js-scroll-trigger" href="#page-top">Top</a>
+                            /* When the input field gets focus, change its width to 100% */
 
-    <header class="masthead text-center text-white d-flex">
-        <div class="container my-auto" id="meme">
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <h1 class="text-uppercase lemonmilk">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    </h1>
-                    <hr>
+                            input[type=text]:focus {
+                                width: 150%;
+                            }
+
+                            @media only screen and (max-width: 960px) {
+                                input[type=text] {
+                                    width: 130px;
+                                    -webkit-transition: width 0.4s ease-in-out;
+                                    transition: width 0.4s ease-in-out;
+                                    border-radius: 15px;
+                                }
+
+                                /* When the input field gets focus, change its width to 100% */
+                                input[type=text]:focus {
+                                    width: 98%;
+                                }
+                            }
+                        </style>
+                    </div>
                 </div>
-                <div class="col-lg-8 mx-auto">
-                    <p class="text-faded mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero delectus porro officiis inventore unde blanditiis dolores, voluptatem corporis, dolor enim facere. Expedita sit commodi quos velit ab voluptas atque veniam.</p>
-                    <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+            </nav>
+        </div>
+        <a id="myBtn" class="btn js-scroll-trigger" href="#page-top"><i style="font-size: 200%;" class="fas fa-chevron-up" aria-hidden="true"></i><br>Top</a>
+
+
+        <header class="masthead text-center text-white d-flex">
+            <div class="container my-auto" id="meme">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto wrapper">
+                        <h1 class="text-uppercase lemonmilk letter-1" id="shleam" style="font-size: 360%;">
+                            No time to be unknown.<br>Get the attention you deserve to own.
+                        </h1>
+                        <h1 class="text-uppercase lemonmilk" id="text" style="font-size: 360%;">
+                        </h1>
+
+                        <hr>
+                    </div>
+                    <div class="col-lg-8 mx-auto">
+                        <p class="text-faded mb-5">Value Driven.<br>Agile Movin'.<br>Always Creating.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="section-heading text-white">We've got what you need!</h2>
-                    <hr class="light my-4">
-                    <p class="text-faded mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-                    <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
+        <section class="bg-primary" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-heading text-white">We Are Everything You Need</h2>
+                        <hr class="light my-4">
+                        <p class="text-faded mb-4">A Young Team <br> Where Passionate Creatives Come Together <br> To Trigger The Feels <br>To Bring Back The Play <br> To Set A New Tone In Advertising <br>
+                            <br>A Collaborative Approach To Everything <br> No Project Too Small No Requirement Too Big<br>Jump In! Let's Kick-Start Your Brand's Journey Like Never Before.</p>
+                        <a class="btn btn-light btn-xl js-scroll-trigger" href="#contact">Get Started!</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="services">
-        <div class="container">
+        <section id="services" class="center-block">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">At Your Service</h2>
+                    <h3 class="section-heading" style="color: white;">Everyday we strive to give our best and our core values guide us to what we aspire to be. </h3>
                     <hr class="my-4">
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box mt-5 mx-auto">
-                        <i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>
-                        <h3 class="mb-3">Sturdy</h3>
-                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="container">
+            </div>
+            <div class="container center-block">
+                <div class="row center-block">
+                    <div class="col-lg-4 col-md-6 text-center center-block">
+                        <div class="service-box mt-5 mx-auto">
+                            <i style="font-size: 700%" class="fas fa-users"></i>
+                            <h3 class="mb-3">Teamwork</h3>
+                            <p class="mb-0">This is how we roll! With teamwork, ideas flourish, skills are integrated, efficiency is encouraged, and a common goal is shared.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box mt-5 mx-auto">
-                        <i class="fa fa-4x fa-paper-plane text-primary mb-3 sr-icons"></i>
-                        <h3 class="mb-3">Ready to Go</h3>
-                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="col-lg-4 col-md-6 text-center">
+                        <div class="service-box mt-5 mx-auto">
+                            <i style="font-size: 700%" class="fas fa-handshake"></i>
+                            <h3 class="mb-3">Partnership</h3>
+                            <p class="mb-0">We aim to be a trusted partner who cares for our client’s needs. We not only want to create winning brands but also winning relationships for a harmonious brand building process.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box mt-5 mx-auto">
-                        <i class="fa fa-4x fa-newspaper-o text-primary mb-3 sr-icons"></i>
-                        <h3 class="mb-3">Up to Date</h3>
-                        <p class="mb-0">Lorem Ipsa laudantium culpa ab neque aliquid.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box mt-5 mx-auto">
-                        <i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
-                        <h3 class="mb-3">Made with Love</h3>
-                        <p class="mb-0"> Laboriosam deleniti suscipit modi laudantium fugit ex ad inventore vitae, unde eos, cum in corporis.</p>
+                    <div class="col-lg-4 col-md-6 text-center">
+                        <div class="service-box mt-5 mx-auto">
+                            <i style="font-size: 700%" class="fas fa-heart"></i>
+                            <h3 class="mb-3">Passion</h3>
+                            <p class="mb-0">It is where we get the excitement, motivation, willingness to put in the extra effort and it enhances our creative flow. When you put your heart in everything you do, everything else that’s good will follow! </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+            <div class="container center-block" style="align-content: stretch;">
+                <div class="row center-block">
+                    <div class="col-lg-6 col-md-9 text-center">
+                        <div class="service-box mt-5 mx-auto">
+                            <i style="font-size: 700%" class="far fa-circle"></i>
+                            <h3 class="mb-3">Open Mind</h3>
+                            <p class="mb-0"> We are artistic explorers with a playful mind who are brave to embrace new things and different ideas. An open mind is where the big idea is.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-9 text-center">
+                        <div class="service-box mt-5 mx-auto">
+                            <i style="font-size: 700%" class="fas fa-shield-alt"></i>
+                            <h3 class="mb-3">Integrity</h3>
+                            <p class="mb-0">We do things in an honest, ethical and responsible way in all our interactions or behavior with the client, our team, suppliers and to the wider community.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section class="p-0" id="portfolio">
-        <div class="container-fluid p-0">
-            <div class="row no-gutters popup-gallery">
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
+        <section id="cores" class="center-block">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3 class="section-heading" style="color: white;">Services</h3>
+                    <hr class="my-4">
+                </div>
+            </div>
+            <div class="container">
+            </div>
+            <div class="container center-block">
+                <div class="row center-block">
+                    <div class="col-lg-4 col-md-6 text-center center-block">
+                        <div class="cores-box mt-5 mx-auto">
+                            <i style="font-size: 700%" class="fab fa-adversal"></i>
+                            <h3 class="mb-3">Advertising</h3>
+                            <p class="mb-0"> TVC Concept or Storyboard, Print Ads Concept and Production, Outdoor Ads Concept, Copywriting, Radio Commercials Concept and Production
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 text-center">
+                        <div class="cores-box mt-5 mx-auto">
+                            <i style="font-size: 700%" class="fas fa-pencil-alt"></i>
+                            <h3 class="mb-3">Design</h3>
+                            <p class="mb-0">Packaging labels, Collaterals, Logo Design and Concept, Product Catalog and Brochures.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 text-center">
+                        <div class="cores-box mt-5 mx-auto">
+                            <i style="font-size: 700%" class="fas fa-globe"></i>
+                            <h3 class="mb-3">Digital</h3>
+                            <p class="mb-0">SEO and Social Media Enhancement</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-0" id="portfolio">
+            <div class="container-fluid p-0">
+                <div class="row no-gutters">
+                    <div class="col-lg-4 col-sm-6">
+<!--                        <a class="portfolio-box" href="#">-->
               <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+<!--                    Category-->
                   </div>
                   <div class="project-name">
-                    Project Name
+<!--                    Project Name-->
                   </div>
                 </div>
               </div>
-            </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
+<!--            </a>-->
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+<!--                        <a class="portfolio-box" href="">-->
               <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+<!--                    Category-->
                   </div>
                   <div class="project-name">
-                    Project Name
+<!--                    Project Name-->
                   </div>
                 </div>
               </div>
-            </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+<!--            </a>-->
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+<!--                        <a class="" href="">-->
               <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+<!--                    Category-->
                   </div>
                   <div class="project-name">
-                    Project Name
+<!--                    Project Name-->
                   </div>
                 </div>
               </div>
-            </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
+<!--            </a>-->
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+<!--                        <a class="" href="">-->
               <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+<!--                    Category-->
                   </div>
                   <div class="project-name">
-                    Project Name
+<!--                    Project Name-->
                   </div>
                 </div>
               </div>
-            </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
+<!--            </a>-->
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+<!--                        <a class="" href="">-->
               <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+
+<!--                    Category-->
                   </div>
                   <div class="project-name">
-                    Project Name
+<!--                    Project Name-->
                   </div>
                 </div>
               </div>
-            </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
+<!--            </a>-->
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+<!--                        <a class="" href="">-->
               <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+<!--                    Category-->
                   </div>
                   <div class="project-name">
-                    Project Name
+<!--                    Project Name-->
                   </div>
                 </div>
               </div>
-            </a>
+<!--            </a>-->
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
 
 
-    <section id="contact">
-        <div class="container contact-content">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
-                    <hr class="my-4">
-                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit officiis, recusandae, dolores possimus est esse, pariatur alias magnam sit aut autem.</p>
+        <section id="contact">
+            <div class="container contact-content">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="section-heading">Consulting Us Is Free,<br>So Hit Us Up With Your Inquiry!</h2>
+                        <hr class="my-4">
+                        <p class="mb-5">Nothing Short Of Great, Famous 58.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 ml-auto text-center">
+                        <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
+                        <p>123-456-6789</p>
+                    </div>
+                    <div class="col-lg-4 mr-auto text-center">
+                        <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
+                        <p>
+                            <a href="mailto:your-email@your-domain.com">feedback@famous58.com</a>
+                        </p>
+                        <p>Unit 201 2nd Floor Parc House II Building 21 EDSA, Makati City Philippines</p>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 ml-auto text-center">
-                    <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
-                    <p>123-456-6789</p>
-                </div>
-                <div class="col-lg-4 mr-auto text-center">
-                    <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
-                    <p>
-                        <a href="mailto:your-email@your-domain.com">feedback@famous58.com</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-        <div class="container" style="background-color: darkslategray; min-width: 100%;">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <ul class="list-group">
-                        <li class="nav-link"><a class="btn btn-primary btn-sm js-scroll-trigger" href="#about">About</a></li>
-                        <li class="nav-link"><a class="btn btn-primary btn-sm js-scroll-trigger" href="#services">Services</a></li>
-                        <li class="nav-link"><a class="btn btn-primary btn-sm js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-link"><a class="btn btn-primary btn-sm js-scroll-trigger" href="#contact">Contact</a></li>
-                    </ul>
+        <div class="text-center" style="background-color: #292929; min-width: 100%;">
+            <div style="padding-top: 1.8%" class="text-center">
+                <div class="text-center">
+                    <div style="word-spacing: 5px; font-size: 70%;" class="text-center">
+                        <a class="js-scroll-trigger bottom-nav-text" style="font-family: sans-serif;" href="#about"> About</a> <i style="font-size: 60%;" class="fa fa-circle bottom-nav-text" aria-hidden="true"></i>
+
+                        <a class=" js-scroll-trigger bottom-nav-text" style="font-family: sans-serif;" href="#services">Core Values</a> <i style="font-size: 60%;" class="fa fa-circle bottom-nav-text" aria-hidden="true"></i>
+                        <a class=" js-scroll-trigger bottom-nav-text" style="font-family: sans-serif;" href="#cores"> Services</a> <i style="font-size: 60%;" class="fa fa-circle bottom-nav-text" aria-hidden="true"></i>
+
+                        <a class=" js-scroll-trigger bottom-nav-text" style="font-family: sans-serif;" href="#portfolio"> Portfolio</a> <i style="font-size: 60%;" class="fa fa-circle bottom-nav-text" aria-hidden="true"></i>
+
+                        <a class=" js-scroll-trigger bottom-nav-text" style="font-family: sans-serif;" Ok href="#contact"> Contact</a>
+
+                    </div>
                     <hr class="light my-4">
-                    <meme style="font-size: 200%;">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-youtube-play"></a>
-                    </meme>
+
                 </div>
+            </div>
+            <div class="text-center" style="font-size: 200%;">
+                <a href="#" style="color: white;" class="fab fa-facebook"></a>
+                <a href="#" style="color: white;" class="fab fa-instagram"></a>
+                <a href="#" style="color: white;" class="fab fa-youtube"></a>
+            </div>
+            <div id="footer" style="color: grey; font-size: 60%; font-family: sans-serif; " xmlns:dc="http://purl.org/dc/elements/1.1/">
+                <p id="copyright" property="dc:rights">
+                Copyright. © 2018 Famous 58. All rights reserved.
+<!--
+                Copyright. &copy;
+                <span property="dc:dateCopyrighted">
+                <script type="text/javascript">
+                document.write(new Date().getFullYear());
+                </script></span>
+                    <span property="dc:publisher">Famous 58. All rights reserved.</span>
+-->
+                </p>
             </div>
         </div>
 
-    <script>
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {
-            scrollFunction()
-        };
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("myBtn").style.display = "block";
-            } else {
-                document.getElementById("myBtn").style.display = "none";
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("myBtn").style.display = "block";
+                } else {
+                    document.getElementById("myBtn").style.display = "none";
+                }
             }
-        }
 
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+        <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+        <!-- Custom scripts for this template -->
+        <script src="js/creative.min.js"></script>
+        <script src="js/classie.js"></script>
+        <script src="js/uisearch.js"></script>
+        <script>
+            new UISearch(document.getElementById('sb-search'));
+        </script>
+        <script type="text/javascript">
+            document.getElementById('frmSearch').onsubmit = function() {
+                window.location = 'http://www.google.com/search?q=site:rustyraptor.github.com ' + document.getElementById('txtSearch').value;
+                return false;
+            }
+        </script>
+    </body>
+    <script>
+        if (jQuery(window).innerWidth() > 1250) {
+
+
+            // type anything here
+            const text = 'No time to be unknown. \n Get the attention you deserve to own.';
+
+            // this function turns a string into an array
+            const createLetterArray = (string) => {
+                return string.split('');
+            }
+
+            // this function creates letter layers wrapped in span tags
+            const createLetterLayers = (array) => {
+                return array.map((letter) => {
+                    let layer = '';
+                    //specify # of layers per letter
+                    for (let i = 1; i <= 2; i++) {
+                        // if letter is a space
+                        if (letter == ' ') {
+                            layer += '<span class="space"></span>';
+                        } else {
+                            layer += '<span class="letter-' + i + '">' + letter + '</span>';
+                        }
+                    }
+                    return layer;
+                });
+            }
+
+            // this function wraps each letter in a parent container
+            const createLetterContainers = (array) => {
+                return array.map((item) => {
+                    let container = '';
+                    container += '<div class="wrapper">' + item + '</div>';
+                    return container;
+                });
+            }
+
+            // use a promise to output text layers into DOM first
+            const outputLayers = new Promise(function(resolve, reject) {
+                document.getElementById('text').innerHTML = createLetterContainers(createLetterLayers(createLetterArray(text))).join('');
+                resolve();
+            });
+
+            // then adjust width and height of each letter
+            const spans = Array.prototype.slice.call(document.getElementsByTagName('span'));
+            outputLayers.then(() => {
+                return spans.map((span) => {
+                    setTimeout(() => {
+                        span.parentElement.style.width = span.offsetWidth + 'px';
+                        span.parentElement.style.height = span.offsetHeight + 'px';
+                    }, 250);
+                });
+            })
+            //                .then(() => {
+            //                // then slide letters into view one at a time
+            //                let time = 250;
+            //                return spans.map((span) => {
+            //                    time += 75;
+            //                    setTimeout(() => {
+            //                        span.parentElement.style.top = '0px';
+            //                    }, time);
+            //                });
+            //            });
+        } else {
+            console.log("memes")
         }
     </script>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js"></script>
-
-</body>
-
 </html>

@@ -12,7 +12,7 @@ body {
 hr {
     max-width: 50px;
     border-width: 3px;
-    border-color: $primary;
+    border-color: navajowhite;
 }
 
 hr.light {
@@ -98,29 +98,30 @@ body {
     /* Hidden by default */
     position: fixed;
     /* Fixed/sticky position */
-    bottom: 20px;
+    bottom: 5%;
     /* Place the button at the bottom of the page */
-    right: 30px;
+    right: 5%;
     /* Place the button 30px from the right */
-    border: 3px;
+    border: 0px;
     /* Remove borders */
-    outline: 3px;
+    outline: 0px;
     /* Remove outline */
-    background-color: gray;
+    background-color: transparent;
     /* Set a background color */
     color: white;
     /* Text color */
     cursor: pointer;
     /* Add a mouse pointer on hover */
-    padding: 15px;
+    padding: 1%;
     /* Some padding */
-    border-radius: 10px;
     /* Rounded corners */
+    border: none;
     z-index: 9999;
     /* Keep on top of everything */
 }
 
 #myBtn:hover {
-    background-color: #555;
+    background-color: transparent;
+    color: #bf1e2e;
     /* Add a dark-grey background on hover */
 }
