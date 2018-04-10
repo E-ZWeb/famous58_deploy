@@ -4049,6 +4049,13 @@ tbody.collapse.show {
   list-style: none;
 }
 
+.navbar-fixed-top{
+  position: fixed; /* <-- Look here */
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
 .navbar-nav .nav-link {
   padding-right: 0;
   padding-left: 0;
