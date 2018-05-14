@@ -378,7 +378,6 @@ header.masthead hr {
 
 /* line 13, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
 header.masthead h1 {
-  color: white;
   /* First we need to help some browsers along for this to work.
      Just because a vendor prefix is there, doesn't mean it will
      work in a browser made by that vendor either, it's just for
@@ -444,73 +443,13 @@ header.masthead p {
 }
 
 @media (min-width: 1250px) {
-  /* line 67, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
-  header.masthead #shleam {
-    color: white;
-    /* First we need to help some browsers along for this to work.
-     Just because a vendor prefix is there, doesn't mean it will
-     work in a browser made by that vendor either, it's just for
-     future-proofing purposes I guess. */
-    -o-transition: .7s;
-    -ms-transition: .7s;
-    -moz-transition: .7s;
-    -webkit-transition: .7s;
-    /* ...and now for the proper property */
-    transition: .7s;
-  }
-  /* line 80, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
-  header.masthead #shleam:hover {
-    color: #bf1e2e;
-  }
-  /* line 82, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
-  header.masthead #text .wrapper {
-    display: inline-block;
-    position: relative;
-    height: 150px;
-    /* default */
-    width: 90px;
-    /* default */
-    transition: ease 0.3s all;
-  }
-  /* line 92, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
-  header.masthead #text .wrapper span {
-    position: absolute;
-    top: 0;
-    right: 0;
-    transition: ease 0.3s all;
-  }
-  /* line 99, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
-  header.masthead #text .wrapper span.letter-2 {
-    color: #bf1e2e;
-  }
-  /* line 103, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
-  header.masthead #text .wrapper span.letter-1 {
-    color: #fdb514;
-    z-index: 1;
-  }
-  /* line 107, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
-  header.masthead #text .wrapper span.letter-1:hover {
-    top: -3px;
-    right: -3px;
-  }
-  /* line 111, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
-  header.masthead #text .wrapper span.letter-1:hover ~ .letter-2 {
-    top: 3px;
-    right: 3px;
-  }
-  /* line 118, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
-  header.masthead #text .wrapper span.space {
-    padding: 0;
-    min-width: 30px;
-    display: inline-block;
-  }
-  /* line 126, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
+  /* line 94, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
   header.masthead h1 {
     font-size: 4rem;
   }
 }
 
-/* line 165, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
+/* line 133, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
 #text .wrapper {
   display: inline-block;
   position: relative;
@@ -521,7 +460,7 @@ header.masthead p {
   transition: ease 0.3s all;
 }
 
-/* line 175, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
+/* line 143, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
 #text .wrapper span {
   position: absolute;
   top: 0;
@@ -529,30 +468,30 @@ header.masthead p {
   transition: ease 0.3s all;
 }
 
-/* line 182, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
+/* line 150, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
 #text .wrapper span.letter-2 {
   color: #bf1e2e;
 }
 
-/* line 186, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
+/* line 154, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
 #text .wrapper span.letter-1 {
   color: #fdb514;
   z-index: 1;
 }
 
-/* line 190, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
+/* line 158, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
 #text .wrapper span.letter-1:hover {
   top: -3px;
   right: -3px;
 }
 
-/* line 194, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
+/* line 162, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
 #text .wrapper span.letter-1:hover ~ .letter-2 {
   top: 3px;
   right: 3px;
 }
 
-/* line 201, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
+/* line 169, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
 #text .wrapper span.space {
   padding: 0;
   min-width: 30px;
@@ -737,12 +676,32 @@ header.masthead p {
   font: arial;
 }
 
-/* line 2, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_corevals.scss */
+/* line 3, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_corevals.scss */
+#shleam {
+  color: white;
+  /* First we need to help some browsers along for this to work.
+     Just because a vendor prefix is there, doesn't mean it will
+     work in a browser made by that vendor either, it's just for
+     future-proofing purposes I guess. */
+  -o-transition: .7s;
+  -ms-transition: .7s;
+  -moz-transition: .7s;
+  -webkit-transition: .7s;
+  /* ...and now for the proper property */
+  transition: .7s;
+}
+
+/* line 16, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_corevals.scss */
+#shleam:hover {
+  color: #bf1e2e;
+}
+
+/* line 17, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_corevals.scss */
 #cores {
   background-color: #bf1e2e;
 }
 
-/* line 6, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_corevals.scss */
+/* line 21, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_corevals.scss */
 .cores-box {
   padding-top: 30%;
   -webkit-background-size: cover;
@@ -756,7 +715,7 @@ header.masthead p {
   color: white;
 }
 
-/* line 17, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_corevals.scss */
+/* line 32, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_corevals.scss */
 .text-muted {
   color: yellow;
 }
