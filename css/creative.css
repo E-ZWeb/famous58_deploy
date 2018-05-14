@@ -1,1 +1,723 @@
-body,html{width:100%;height:100%}body{font-family:'Merriweather', 'Helvetica Neue', Arial, sans-serif}hr{max-width:50px;border-width:3px;border-color:navajowhite}hr.light{border-color:#fff}a{color:#bf1e2e;-webkit-transition:all 0.2s;-moz-transition:all 0.2s;transition:all 0.2s}a:hover{color:#bf1e2e}h1,h2,h3,h4,h5,h6{font-family:'Open Sans', 'Helvetica Neue', Arial, sans-serif}.bg-primary{background-color:#bf1e2e !important}.bg-dark{background-color:#212529 !important}.text-faded{color:rgba(255,255,255,0.7)}section{padding:8rem 0}.section-heading{margin-top:0}::-moz-selection{color:#fff;background:#212529;text-shadow:none}::selection{color:#fff;background:#212529;text-shadow:none}img::selection{color:#fff;background:transparent}img::-moz-selection{color:#fff;background:transparent}body{-webkit-tap-highlight-color:#212529}@font-face{font-family:"lemonmilk";src:url("/fonts/lemonmilk.woff") format("woff"),url("/fonts/lemonmilk.otf") format("opentype")}.lemonmilk{font-family:'lemonmilk'}#myBtn{display:none;position:fixed;bottom:5%;right:5%;border:0px;outline:0px;background-color:transparent;color:white;cursor:pointer;padding:1%;border:none;z-index:9999}#myBtn:hover{background-color:transparent;color:#bf1e2e}@font-face{font-family:"lemonmilk";src:url("/fonts/lemonmilk.woff") format("woff"),url("/fonts/lemonmilk.otf") format("opentype")}.dong{right:7%}.donger{width:50px}.lemonmilk{font-family:'lemonmilk'}#mainNav{border-bottom:1px solid rgba(33,37,41,0.1);background-color:#fff;font-family:'Open Sans', 'Helvetica Neue', Arial, sans-serif;-webkit-transition:all 0.2s;-moz-transition:all 0.2s;transition:all 0.2s}#mainNav .navbar-brand{font-family:'lemonmilk';font-weight:700;text-transform:uppercase;color:#bf1e2e}#mainNav .navbar-brand:focus,#mainNav .navbar-brand:hover{color:#bf1e2e}#mainNav .navbar-nav>li.nav-item>a.nav-link,#mainNav .navbar-nav>li.nav-item>a.nav-link:focus{font-size:.9rem;font-weight:700;text-transform:uppercase;color:#212529}#mainNav .navbar-nav>li.nav-item>a.nav-link:hover,#mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover{color:#bf1e2e}#mainNav .navbar-nav>li.nav-item>a.nav-link.active,#mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active{color:#bf1e2e !important;background-color:transparent}#mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover,#mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active:hover{background-color:transparent}@media (min-width: 992px){#mainNav{max-height:6%;border-color:transparent;background-color:transparent}#mainNav .navbar-brand{font-family:'lemonmilk';color:rgba(255,255,255,0.7)}#mainNav .navbar-brand:focus,#mainNav .navbar-brand:hover{color:#fff}#mainNav .navbar-nav>li.nav-item>a.nav-link{padding:0.5rem 1rem}#mainNav .navbar-nav>li.nav-item>a.nav-link,#mainNav .navbar-nav>li.nav-item>a.nav-link:focus{color:rgba(255,255,255,0.7)}#mainNav .navbar-nav>li.nav-item>a.nav-link:hover,#mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover{color:#fff}#mainNav.navbar-shrink{max-height:6%;border-bottom:1px solid rgba(33,37,41,0.1);background-color:#fff}#mainNav.navbar-shrink .navbar-brand{font-family:'lemonmilk';color:#bf1e2e}#mainNav.navbar-shrink .navbar-brand:focus,#mainNav.navbar-shrink .navbar-brand:hover{color:#bf1e2e}#mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link,#mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:focus{color:#212529}#mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:hover,#mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:focus:hover{color:#bf1e2e}}@media only screen and (max-width: 960px){#mainNav .dong{right:8.6%}#mainNav .donger{width:100%}}@media only screen and (max-width: 550px){#mainNav .dong{right:9%}}#mainNav .donger{width:100%}@media only screen and (max-width: 500px){#mainNav .dong{right:10%}}#mainNav .donger{width:100%}@media only screen and (max-width: 414px){#mainNav .dong{right:12%}}#mainNav .donger{width:100%}@media only screen and (max-width: 360px){#mainNav .dong{right:13%}}#mainNav .donger{width:100%}@media only screen and (max-width: 320px){#mainNav .dong{right:15%}}#mainNav .donger{width:100%}@media only screen and (max-width: 280px){#mainNav .dong{right:16%}}#mainNav .donger{width:100%}header.masthead{padding-top:10rem;padding-bottom:calc(10rem - 56px);background-image:url("../img/header.jpg");background-position:center center;background-attachment:fixed;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}header.masthead hr{margin-top:30px;margin-bottom:30px}header.masthead h1{color:white;-o-transition:1s;-ms-transition:1s;-moz-transition:1s;-webkit-transition:1s;transition:1s;font-size:1rem}header.masthead p{font-weight:300}@media (max-width: 10px){header.masthead #text{visibility:hidden}header.masthead #shleam{visibility:visible}}@media (min-width: 768px){header.masthead p{font-size:1.15rem}}@media (min-width: 992px){header.masthead{height:100vh;min-height:650px;padding-top:0;padding-bottom:0}header.masthead h1{font-size:2rem}}@media (min-width: 1250px){header.masthead #shleam{visibility:hidden}header.masthead #text .wrapper{display:inline-block;position:relative;height:150px;width:90px;transition:ease 0.3s all}header.masthead #text .wrapper span{position:absolute;top:0;right:0;transition:ease 0.3s all}header.masthead #text .wrapper span.letter-2{color:#bf1e2e}header.masthead #text .wrapper span.letter-1{color:#fdb514;z-index:1}header.masthead #text .wrapper span.letter-1:hover{top:-3px;right:-3px}header.masthead #text .wrapper span.letter-1:hover ~ .letter-2{top:3px;right:3px}header.masthead #text .wrapper span.space{padding:0;min-width:30px;display:inline-block}header.masthead h1{font-size:4rem}}#text .wrapper{display:inline-block;position:relative;height:150px;width:90px;transition:ease 0.3s all}#text .wrapper span{position:absolute;top:0;right:0;transition:ease 0.3s all}#text .wrapper span.letter-2{color:#bf1e2e}#text .wrapper span.letter-1{color:#fdb514;z-index:1}#text .wrapper span.letter-1:hover{top:-3px;right:-3px}#text .wrapper span.letter-1:hover ~ .letter-2{top:3px;right:3px}#text .wrapper span.space{padding:0;min-width:30px;display:inline-block}#services{background-color:#fdb514}.service-box{padding-top:30%;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;max-width:400px;min-height:300px;text-shadow:5px;border-radius:35%;color:white}.text-muted{color:red}.portfolio-box{position:relative;display:block;max-width:650px;margin:0 auto}.portfolio-box .portfolio-box-caption{position:absolute;bottom:0;display:block;width:100%;height:100%;text-align:center;opacity:0;color:#fff;background:rgba(191,30,46,0.9);-webkit-transition:all 0.2s;-moz-transition:all 0.2s;transition:all 0.2s}.portfolio-box .portfolio-box-caption .portfolio-box-caption-content{position:absolute;top:50%;width:100%;transform:translateY(-50%);text-align:center}.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name{padding:0 15px;font-family:'Open Sans', 'Helvetica Neue', Arial, sans-serif}.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category{font-size:14px;font-weight:600;text-transform:uppercase}.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name{font-size:18px}.portfolio-box:hover .portfolio-box-caption{opacity:1}.portfolio-box:focus{outline:none}@media (min-width: 768px){.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category{font-size:16px}.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name{font-size:22px}}#contact{background-image:url("../img/header.jpg");background-position:center center;background-attachment:fixed;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}.contact-content{background-color:#ffffff;border:0;opacity:0.7;padding-top:5%;padding-bottom:5%;padding-left:1%;padding-right:1%;border-radius:19px}.text-primary{color:#bf1e2e !important}.btn{font-weight:700;text-transform:uppercase;border:none;border-radius:300px;font-family:'Open Sans', 'Helvetica Neue', Arial, sans-serif}.btn-xl{padding:1rem 2rem}.btn-primary{background-color:#bf1e2e;border-color:#bf1e2e}.btn-primary:hover,.btn-primary:focus,.btn-primary:active{color:#fff;background-color:#a91b29 !important}.btn-primary:active,.btn-primary:focus{box-shadow:0 0 0 0.2rem rgba(240,95,64,0.5) !important}.btn-primary .text-muted{color:red}.sitemap{background-color:darkslategray;justify-content:center}.bottom-nav{color:white}.bottom-nav-text{color:white;font:arial}#cores{background-color:#bf1e2e}.cores-box{padding-top:30%;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;max-width:400px;min-height:300px;text-shadow:5px;border-radius:35%;color:white}.text-muted{color:yellow}
+/* line 2, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_global.scss */
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 8, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_global.scss */
+body {
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* line 12, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_global.scss */
+hr {
+  max-width: 50px;
+  border-width: 3px;
+  border-color: navajowhite;
+}
+
+/* line 18, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_global.scss */
+hr.light {
+  border-color: #fff;
+}
+
+/* line 22, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_global.scss */
+a {
+  color: #bf1e2e;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+/* line 25, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_global.scss */
+a:hover {
+  color: #bf1e2e;
+}
+
+/* line 30, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_global.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* line 39, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_global.scss */
+.bg-primary {
+  background-color: #bf1e2e !important;
+}
+
+/* line 43, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_global.scss */
+.bg-dark {
+  background-color: #212529 !important;
+}
+
+/* line 47, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_global.scss */
+.text-faded {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* line 51, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_global.scss */
+section {
+  padding: 8rem 0;
+}
+
+/* line 55, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_global.scss */
+.section-heading {
+  margin-top: 0;
+}
+
+/* line 59, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_global.scss */
+::-moz-selection {
+  color: #fff;
+  background: #212529;
+  text-shadow: none;
+}
+
+/* line 65, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_global.scss */
+::selection {
+  color: #fff;
+  background: #212529;
+  text-shadow: none;
+}
+
+/* line 71, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_global.scss */
+img::selection {
+  color: #fff;
+  background: transparent;
+}
+
+/* line 76, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_global.scss */
+img::-moz-selection {
+  color: #fff;
+  background: transparent;
+}
+
+/* line 81, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_global.scss */
+body {
+  -webkit-tap-highlight-color: #212529;
+}
+
+@font-face {
+  font-family: "lemonmilk";
+  src: url("/fonts/lemonmilk.woff") format("woff"), url("/fonts/lemonmilk.otf") format("opentype");
+}
+
+/* line 91, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_global.scss */
+.lemonmilk {
+  font-family: 'lemonmilk';
+}
+
+/* line 96, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_global.scss */
+#myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 5%;
+  /* Place the button at the bottom of the page */
+  right: 5%;
+  /* Place the button 30px from the right */
+  border: 0px;
+  /* Remove borders */
+  outline: 0px;
+  /* Remove outline */
+  background-color: transparent;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 1%;
+  /* Some padding */
+  /* Rounded corners */
+  border: none;
+  z-index: 9999;
+  /* Keep on top of everything */
+}
+
+/* line 123, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_global.scss */
+#myBtn:hover {
+  background-color: transparent;
+  color: #bf1e2e;
+  /* Add a dark-grey background on hover */
+}
+
+@font-face {
+  font-family: "lemonmilk";
+  src: url("/fonts/lemonmilk.woff") format("woff"), url("/fonts/lemonmilk.otf") format("opentype");
+}
+
+/* line 7, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_navbar.scss */
+.dong {
+  right: 7%;
+}
+
+/* line 10, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_navbar.scss */
+.donger {
+  width: 50px;
+}
+
+/* line 13, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_navbar.scss */
+.lemonmilk {
+  font-family: 'lemonmilk';
+}
+
+/* line 17, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_navbar.scss */
+#mainNav {
+  border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+  background-color: #fff;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+/* line 155, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_navbar.scss */
+#mainNav .navbar-brand {
+  font-family: 'lemonmilk';
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #bf1e2e;
+}
+
+/* line 160, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_navbar.scss */
+#mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+  color: #bf1e2e;
+}
+
+/* line 167, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_navbar.scss */
+#mainNav .navbar-nav > li.nav-item > a.nav-link,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+  font-size: .9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #212529;
+}
+
+/* line 173, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_navbar.scss */
+#mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+  color: #bf1e2e;
+}
+
+/* line 176, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_navbar.scss */
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
+  color: #bf1e2e !important;
+  background-color: transparent;
+}
+
+/* line 179, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_navbar.scss */
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
+  background-color: transparent;
+}
+
+@media (min-width: 992px) {
+  /* line 17, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_navbar.scss */
+  #mainNav {
+    max-height: 6%;
+    border-color: transparent;
+    background-color: transparent;
+  }
+  /* line 190, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_navbar.scss */
+  #mainNav .navbar-brand {
+    font-family: 'lemonmilk';
+    color: rgba(255, 255, 255, 0.7);
+  }
+  /* line 194, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_navbar.scss */
+  #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+    color: #fff;
+  }
+  /* line 199, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_navbar.scss */
+  #mainNav .navbar-nav > li.nav-item > a.nav-link {
+    padding: 0.5rem 1rem;
+  }
+  /* line 202, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_navbar.scss */
+  #mainNav .navbar-nav > li.nav-item > a.nav-link,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  /* line 205, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_navbar.scss */
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+    color: #fff;
+  }
+  /* line 209, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_navbar.scss */
+  #mainNav.navbar-shrink {
+    max-height: 6%;
+    border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+    background-color: #fff;
+  }
+  /* line 216, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_navbar.scss */
+  #mainNav.navbar-shrink .navbar-brand {
+    font-family: 'lemonmilk';
+    color: #bf1e2e;
+  }
+  /* line 220, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_navbar.scss */
+  #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
+    color: #bf1e2e;
+  }
+  /* line 225, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_navbar.scss */
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
+    color: #212529;
+  }
+  /* line 228, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_navbar.scss */
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+    color: #bf1e2e;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  /* line 235, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_navbar.scss */
+  #mainNav .dong {
+    right: 8.6%;
+  }
+  /* line 238, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_navbar.scss */
+  #mainNav .donger {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  /* line 243, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_navbar.scss */
+  #mainNav .dong {
+    right: 9%;
+  }
+}
+
+/* line 247, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_navbar.scss */
+#mainNav .donger {
+  width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+  /* line 251, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_navbar.scss */
+  #mainNav .dong {
+    right: 10%;
+  }
+}
+
+/* line 255, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_navbar.scss */
+#mainNav .donger {
+  width: 100%;
+}
+
+@media only screen and (max-width: 414px) {
+  /* line 259, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_navbar.scss */
+  #mainNav .dong {
+    right: 12%;
+  }
+}
+
+/* line 263, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_navbar.scss */
+#mainNav .donger {
+  width: 100%;
+}
+
+@media only screen and (max-width: 360px) {
+  /* line 267, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_navbar.scss */
+  #mainNav .dong {
+    right: 13%;
+  }
+}
+
+/* line 271, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_navbar.scss */
+#mainNav .donger {
+  width: 100%;
+}
+
+@media only screen and (max-width: 320px) {
+  /* line 275, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_navbar.scss */
+  #mainNav .dong {
+    right: 15%;
+  }
+}
+
+/* line 279, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_navbar.scss */
+#mainNav .donger {
+  width: 100%;
+}
+
+@media only screen and (max-width: 280px) {
+  /* line 283, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_navbar.scss */
+  #mainNav .dong {
+    right: 16%;
+  }
+}
+
+/* line 287, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_navbar.scss */
+#mainNav .donger {
+  width: 100%;
+}
+
+/* line 2, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
+header.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-image: url("../img/header.jpg");
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 9, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
+header.masthead hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* line 13, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
+header.masthead h1 {
+  /* First we need to help some browsers along for this to work.
+     Just because a vendor prefix is there, doesn't mean it will
+     work in a browser made by that vendor either, it's just for
+     future-proofing purposes I guess. */
+  -o-transition: 1s;
+  -ms-transition: 1s;
+  -moz-transition: 1s;
+  -webkit-transition: 1s;
+  /* ...and now for the proper property */
+  transition: 1s;
+  font-size: 1rem;
+}
+
+/* line 30, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
+header.masthead p {
+  font-weight: 300;
+}
+
+@media (max-width: 10px) {
+  /* line 34, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
+  header.masthead #text {
+    visibility: hidden;
+  }
+  /* line 37, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
+  header.masthead #shleam {
+    color: white;
+    /* First we need to help some browsers along for this to work.
+     Just because a vendor prefix is there, doesn't mean it will
+     work in a browser made by that vendor either, it's just for
+     future-proofing purposes I guess. */
+    -o-transition: .7s;
+    -ms-transition: .7s;
+    -moz-transition: .7s;
+    -webkit-transition: .7s;
+    /* ...and now for the proper property */
+    transition: .7s;
+  }
+  /* line 50, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
+  header.masthead #shleam:hover {
+    color: #bf1e2e;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 53, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
+  header.masthead p {
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 2, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
+  header.masthead {
+    height: 100vh;
+    min-height: 650px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  /* line 62, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
+  header.masthead h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1250px) {
+  /* line 94, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
+  header.masthead h1 {
+    font-size: 4rem;
+  }
+}
+
+/* line 133, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
+#text .wrapper {
+  display: inline-block;
+  position: relative;
+  height: 150px;
+  /* default */
+  width: 90px;
+  /* default */
+  transition: ease 0.3s all;
+}
+
+/* line 143, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
+#text .wrapper span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: ease 0.3s all;
+}
+
+/* line 150, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
+#text .wrapper span.letter-2 {
+  color: #bf1e2e;
+}
+
+/* line 154, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
+#text .wrapper span.letter-1 {
+  color: #fdb514;
+  z-index: 1;
+}
+
+/* line 158, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
+#text .wrapper span.letter-1:hover {
+  top: -3px;
+  right: -3px;
+}
+
+/* line 162, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
+#text .wrapper span.letter-1:hover ~ .letter-2 {
+  top: 3px;
+  right: 3px;
+}
+
+/* line 169, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_masthead.scss */
+#text .wrapper span.space {
+  padding: 0;
+  min-width: 30px;
+  display: inline-block;
+}
+
+/* line 2, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_services.scss */
+#services {
+  background-color: #fdb514;
+}
+
+/* line 6, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_services.scss */
+.service-box {
+  padding-top: 30%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  max-width: 400px;
+  min-height: 300px;
+  text-shadow: 5px;
+  border-radius: 35%;
+  color: white;
+}
+
+/* line 17, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_services.scss */
+.text-muted {
+  color: red;
+}
+
+/* line 2, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_portfolio.scss */
+.portfolio-box {
+  position: relative;
+  display: block;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* line 7, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_portfolio.scss */
+.portfolio-box .portfolio-box-caption {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background: rgba(191, 30, 46, 0.9);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+/* line 18, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_portfolio.scss */
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+/* line 24, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_portfolio.scss */
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  padding: 0 15px;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* line 29, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_portfolio.scss */
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* line 34, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_portfolio.scss */
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  font-size: 18px;
+}
+
+/* line 40, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_portfolio.scss */
+.portfolio-box:hover .portfolio-box-caption {
+  opacity: 1;
+}
+
+/* line 44, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_portfolio.scss */
+.portfolio-box:focus {
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  /* line 50, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_portfolio.scss */
+  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+    font-size: 16px;
+  }
+  /* line 53, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_portfolio.scss */
+  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    font-size: 22px;
+  }
+}
+
+/* line 1, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_contact.scss */
+#contact {
+  background-image: url("../img/header.jpg");
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 8, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_contact.scss */
+.contact-content {
+  background-color: #ffffff;
+  border: 0;
+  opacity: 0.7;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 1%;
+  padding-right: 1%;
+  border-radius: 19px;
+}
+
+/* line 2, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_bootstrap-overrides.scss */
+.text-primary {
+  color: #bf1e2e !important;
+}
+
+/* line 6, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_bootstrap-overrides.scss */
+.btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 300px;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* line 14, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_bootstrap-overrides.scss */
+.btn-xl {
+  padding: 1rem 2rem;
+}
+
+/* line 18, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_bootstrap-overrides.scss */
+.btn-primary {
+  background-color: #bf1e2e;
+  border-color: #bf1e2e;
+}
+
+/* line 21, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_bootstrap-overrides.scss */
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  color: #fff;
+  background-color: #a91b29 !important;
+}
+
+/* line 27, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_bootstrap-overrides.scss */
+.btn-primary:active, .btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+}
+
+/* line 31, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_bootstrap-overrides.scss */
+.btn-primary .text-muted {
+  color: red;
+}
+
+/* line 1, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_sitemap.scss */
+.sitemap {
+  background-color: darkslategray;
+  justify-content: center;
+}
+
+/* line 6, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_sitemap.scss */
+.bottom-nav {
+  color: white;
+}
+
+/* line 10, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_sitemap.scss */
+.bottom-nav-text {
+  color: white;
+  font: arial;
+}
+
+/* line 3, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_corevals.scss */
+#shleam {
+  color: white;
+  /* First we need to help some browsers along for this to work.
+     Just because a vendor prefix is there, doesn't mean it will
+     work in a browser made by that vendor either, it's just for
+     future-proofing purposes I guess. */
+  -o-transition: .7s;
+  -ms-transition: .7s;
+  -moz-transition: .7s;
+  -webkit-transition: .7s;
+  /* ...and now for the proper property */
+  transition: .7s;
+}
+
+/* line 16, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_corevals.scss */
+#shleam:hover {
+  color: #bf1e2e;
+}
+
+/* line 17, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_corevals.scss */
+#cores {
+  background-color: #bf1e2e;
+}
+
+/* line 21, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_corevals.scss */
+.cores-box {
+  padding-top: 30%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  max-width: 400px;
+  min-height: 300px;
+  text-shadow: 5px;
+  border-radius: 35%;
+  color: white;
+}
+
+/* line 32, /home/cat/Documents/src/enzoandziad/rustyraptor.github.io/famous58/scss/_corevals.scss */
+.text-muted {
+  color: yellow;
+}
+
+/*# sourceMappingURL=../css/creative.map */

@@ -11,7 +11,7 @@ header.masthead {
         margin-bottom: 30px;
     }
     h1 {
-        color: white;
+//        color: white;
         /* First we need to help some browsers along for this to work.
      Just because a vendor prefix is there, doesn't mean it will
      work in a browser made by that vendor either, it's just for
@@ -34,9 +34,20 @@ header.masthead {
         #text {
             visibility: hidden;
         }
-        #shleam {
-            visibility: visible;
-        }
+#shleam {
+  color:white;
+  /* First we need to help some browsers along for this to work.
+     Just because a vendor prefix is there, doesn't mean it will
+     work in a browser made by that vendor either, it's just for
+     future-proofing purposes I guess. */
+  -o-transition:.7s;
+  -ms-transition:.7s;
+  -moz-transition:.7s;
+  -webkit-transition:.7s;
+  /* ...and now for the proper property */
+  transition:.7s;
+}
+#shleam:hover { color:$primary; }
     }
     @media (min-width: 768px) {
         p {
@@ -53,54 +64,33 @@ header.masthead {
         }
     }
     @media (min-width: 1250px) {
-        #shleam {
-            visibility: hidden;
-        }
-        #text {
-    .wrapper {
-        display: inline-block;
-//        top: -900px;
-        position: relative;
-        height: 150px;
-        /* default */
-        width: 90px;
-        /* default */
-        transition: ease 0.3s all;
 
-        span {
-            position: absolute;
-            top: 0;
-            right: 0;
-
-            transition: ease 0.3s all;
-
-            &.letter-2 {
-                color: $primary;
-            }
-
-            &.letter-1 {
-                color: #fdb514;
-                z-index: 1;
-
-                &:hover {
-                    top: -3px;
-                    right: -3px;
-
-                    ~ .letter-2 {
-                        top: 3px;
-                        right: 3px;
-                    }
-                }
-            }
-
-            &.space {
-                padding: 0;
-                min-width: 30px;
-                display: inline-block;
-            }
-        }
-    }
-}
+//        #text {
+////    .wrapper {
+////        display: inline-block;
+//////        top: -900px;
+////        position: relative;
+////        height: 150px;
+////        /* default */
+////        width: 90px;
+////        /* default */
+////        transition: ease 0.3s all;
+////
+////        span {
+////            position: absolute;
+////            top: 0;
+////            right: 0;
+////
+////            transition: ease 0.3s all;
+////
+////            &.space {
+////                padding: 0;
+////                min-width: 30px;
+////                display: inline-block;
+////            }
+////        }
+////    }
+//}
         h1 {
             font-size: 4rem;
         }
