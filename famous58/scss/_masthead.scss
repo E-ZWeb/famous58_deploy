@@ -34,9 +34,20 @@ header.masthead {
         #text {
             visibility: hidden;
         }
-        #shleam {
-            visibility: visible;
-        }
+#shleam {
+  color:white;
+  /* First we need to help some browsers along for this to work.
+     Just because a vendor prefix is there, doesn't mean it will
+     work in a browser made by that vendor either, it's just for
+     future-proofing purposes I guess. */
+  -o-transition:.7s;
+  -ms-transition:.7s;
+  -moz-transition:.7s;
+  -webkit-transition:.7s;
+  /* ...and now for the proper property */
+  transition:.7s;
+}
+#shleam:hover { color:$primary; }
     }
     @media (min-width: 768px) {
         p {
@@ -53,9 +64,20 @@ header.masthead {
         }
     }
     @media (min-width: 1250px) {
-        #shleam {
-            visibility: hidden;
-        }
+#shleam {
+  color:white;
+  /* First we need to help some browsers along for this to work.
+     Just because a vendor prefix is there, doesn't mean it will
+     work in a browser made by that vendor either, it's just for
+     future-proofing purposes I guess. */
+  -o-transition:.7s;
+  -ms-transition:.7s;
+  -moz-transition:.7s;
+  -webkit-transition:.7s;
+  /* ...and now for the proper property */
+  transition:.7s;
+}
+#shleam:hover { color:$primary; }
         #text {
     .wrapper {
         display: inline-block;
