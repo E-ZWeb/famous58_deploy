@@ -1,6 +1,5 @@
-
-
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -15,8 +14,8 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="./bootbatch/dist/darkly/bootstrap.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    
-    
+
+
 
     <!--    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.css">-->
 
@@ -119,21 +118,21 @@
 
 <body id="page-top">
 
+    <div id="navbad" style="z-index: 10000">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-light">
 
-    <div id="navbad">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="z-index: 99999;" id="navscr">
-            <a class="navbar-brand" style="padding: 0; margin: 0;" href="./index.html"> <img src="./img/logo.png" style="" alt="DJA" height="6%" width="6%"> <e style="font-family: sans-serif;">DJA Security Services</e></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" style="position: fixed; left: 85%; padding-top: 0.1%; padding-bottom: 0.1%; " data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+            <a class="navbar-brand" href="#"><img src="img/WE.png" class="img-responsive" alt="DJA">DJA Security Services</a>
+            <button class="navbar-toggler" type="button" style="position: fixed; left: 80%;" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon" ></span>
   </button>
 
-            <div class="collapse navbar-collapse" id="navbarColor03">
+            <div class="collapse navbar-collapse" id="navbarColor01">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#about">About</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About<span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#mission">Mission and Vision</a>
+                        <a class="nav-link" href="#">Mission</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#apply">Apply</a>
@@ -146,20 +145,20 @@
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" placeholder="Search" type="text">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
                     <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
                 </form>
             </div>
         </nav>
     </div>
-<div id="myBtn">
-    <a  class="btn btn-primary" href="#page-top"><i style="font-size: 200%;" class="fas fa-chevron-up" aria-hidden="true"></i><br>Top</a>
-    
+    <div id="myBtn">
+        <a class="btn btn-primary" href="#page-top"><i style="font-size: 200%;" class="fas fa-chevron-up" aria-hidden="true"></i><br>Top</a>
+
     </div>
     <main role="main" class="container" id="home">
 
         <div class="section-format">
-            <h1>DJA Security Services</h1>
+            <h1><img src="img/logo.png" width="70%" alt="DJA"></h1>
             <p class="lead"></p>
         </div>
 
@@ -189,7 +188,7 @@
     </section>
 
     <section class="section-format container">
-        <div class="jumbotron" style="border-radius: 0px;" id="mission">
+        <div class="jumbotron" style="border-radius: 0px; text-align: left;" id="mission">
             <h2>Mission</h2>
             <div class="info" align="left">
                 <p>Our Mission is to be the nation’s most respected and recognized private security service provider. With professional and responsible management, we offer clients the most compelling security service possible to promote peace and order. <br> </p>
@@ -205,12 +204,13 @@
     </section>
 
     <section class="section-format">
-      <div id='app'></div>
-      <a href="./photos.html"><button type="button" class="btn btn-secondary btn-lg btn-block">See All Photos</button></a>
+        <h1>Photos</h1>
+        <div id='app'></div>
+        <a href="./photos.html"><button type="button" class="btn btn-secondary btn-lg btn-block">See All Photos</button></a>
     </section>
 
     <section class="section-format container">
-        <div class="jumbotron" style="border-radius: 0px;" id="apply">
+        <div class="jumbotron" style="border-radius: 0px; text-align: left;" id="apply">
             <h2>Application Forms</h2>
             <h4>We're Hiring!!! <br> Apply Below</h4>
             <p>ADDRESS: 168 SINCEIGO STREET, BRGY. 18 PASAY CITY <br> TEL NO: 523-1054 / FAX NO: 353-2963 <br> EMAIL ADDRESS: 07djass@gmail.com <br>
@@ -222,7 +222,7 @@
             </div>
             <br>
             <br>
-            <div style="width: 100%; align-self: center; margin: auto;  padding: 10px;">
+            <div style="width: 100%; align-self: center; margin: auto;  padding: 10px; text-align: left;">
                 <div align="left">
                     <h3>Requirements:</h3>
                     <ul>
@@ -261,7 +261,7 @@
         </div>
     </section>
     <section class="section-format container">
-        <div class="jumbotron" style="border-radius: 0px;" id="contact">
+        <div class="jumbotron" style="border-radius: 0px; text-align: left;" id="contact">
             <h2>Contact Us</h2>
             <p>ADDRESS: 168 SINCEIGO STREET, BRGY. 18 PASAY CITY <br> TEL NO: 523-1054 / FAX NO: 353-2963 <br> EMAIL ADDRESS: 07djass@gmail.com <br>
             </p>
@@ -288,41 +288,217 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
         </div>
     </section>
     <section class="section-format container">
-        <div class="jumbotron" style="border-radius: 0px;" id="clients">
+        <div class="jumbotron" style="border-radius: 0px; text-align: left;" id="clients">
             <h2>Our Clients</h2>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-        </div>
-    </section>
-    
-           <div class="text-center" style="background-color: #292929; min-width: 100%;">
-            <div style="padding-top: 1.8%" class="text-center">
-                <div class="text-center">
-                    <div style="word-spacing: 5px; font-size: 70%; color: white;" class="text-center">
-                        <a class="bottom-nav-text" style="color: white; font-family: sans-serif;" href="#about"> About</a> <i style="font-size: 60%;" class="fa fa-circle bottom-nav-text" aria-hidden="true"></i>
+            <div class="row">
+                <div class="col-md-4">
+                    <button class="accordion">SM MALL OF ASIA</button>
 
-                        <a class=" bottom-nav-text" style="color: white; font-family: sans-serif;" href="#mission">Mission and Vision</a> <i style="font-size: 60%;" class="fa fa-circle bottom-nav-text" aria-hidden="true"></i>
-                        <a class="bottom-nav-text" style="color: white; font-family: sans-serif;" href="#apply"> Apply</a> <i style="font-size: 60%;" class="fa fa-circle bottom-nav-text" aria-hidden="true"></i>
-
-                        <a class="bottom-nav-text" style="color: white; font-family: sans-serif;" href="#contact"> Contact</a> <i style="font-size: 60%;" class="fa fa-circle bottom-nav-text" aria-hidden="true"></i>
-
-                        <a class="bottom-nav-text" style="font-family: sans-serif;" Ok href="#clients"> <e style="color: white;">Clients</e></a>
-
+                    <div class="panel">
+                        <ul>
+                            <li>Ace Hardware Philippines, Inc.</li>
+                            <li>Super Shopping Market, Inc.</li>
+                            <li>Signature Lines Inc.</li>
+                            <li>Casamia Furniture Center, Inc.</li>
+                            <li>Metro Main Star Asia, Corp.</li>
+                            <li>Sports Central (Manila), Inc.</li>
+                            <li>SM Prime Holdings Inc.</li>
+                            <li>Sports Central (Manila), Inc.</li>
+                            <li>Forever Agape & Glory Inc.</li>
+                            <li>Kultura Store, Inc.</li>
+                            <li>International Toy World, Inc.</li>
+                            <li>Star Appliance Center, Inc.</li>
+                            <li>International Toy World, Inc.</li>
+                            <li>Fast Retailing Philippines, Inc.</li>
+                            <li>Surplus Marketing Corp.</li>
+                            <li>One E-com</li>
+                            <li>Two E-Com</li>
+                            <li>Three E-Com</li>
+                            <li>Five E-Com</li>
+                            <li>SM Prime Holdings Inc.</li>
+                            <li>Breeze Residences Condominium Corp.</li>
+                            <li>Shore Residences Condominium Corp.</li>
+                            <li>Wind Residences Condominium Corp.</li>
+                            <li>ShineResidences Condominium Corp.</li>
+                        </ul>
                     </div>
-                    <hr class="light my-4">
+                </div>
+                <div class="col-md-4">
+                    <button class="accordion">CHINA BANK</button>
+                    <div class="panel">
+                        <ul>
+                            <li>CBC - Five E-com Center</li>
+                            <li>CBC- Abad Santos</li>
+                            <li>CBC - Alvarado</li>
+                            <li>CBC - Angel Linao</li>
+                            <li>CBC- Aseana Solemare </li>
+                            <li>CBC- Aseana Square</li>
+                            <li>CBC- Ayala</li>
+                            <li>CBC- Baclaran FB Harrison</li>
+                            <li>CBC- Baclaran Parañaque</li>
+                            <li>CBC- Bagtikan</li>
+                            <li>CBC- Better Living, Bicutan, Parañaque</li>
+                            <li>CBC- BGC- 1World Place</li>
+                            <li>CBC- Comembo</li>
+                            <li>CBC- Divisoria</li>
+                            <li>CBC- Double Dragon</li>
+                            <li>CBC- Elcano</li>
+                            <li>CBC- Elizabeth</li>
+                            <li>CBC- Evangelista</li>
+                            <li>CBC- Fort Bonifacio</li>
+                            <li>CBC- Knight Bridge</li>
+                            <li>CBC- Lavezares Binondo</li>
+                            <li>CBC- Legaspi Vill Amorsolo</li>
+                            <li>CBC- Leviste</li>
+                            <li>CBC- Macapagal</li>
+                            <li>CBC- Maceda</li>
+                            <li>CBC- Magallanes</li>
+                            <li>CBC- Masangkay</li>
+                            <li>CBC- Moonwalk - Parañaque</li>
+                            <li>CBC- Oroquieta</li>
+                            <li>CBC- P. Ocampo- San Antonio Vill</li>
+                            <li>CBC- Paco-Otis</li>
+                            <li>CBC- Reposo</li>
+                            <li>CBC- Sales, Raon</li>
+                            <li>CBC- San Joaquin Pasig</li>
+                            <li>CBC- SM Aura Chinabank Corp</li>
+                            <li>CBC- Soler</li>
+                            <li>CBC- Taft -Quirino</li>
+                            <li>CBS- 2 Ecom</li>
+                            <li>CBS- Baclaran</li>
+                            <li>CBS- Bangkal</li>
+                            <li>CBS- Bautista</li>
+                            <li>CBS- Better Living</li>
+                            <li>CBS- Divisoria</li>
+                            <li>CBS- Hypermarket FTI</li>
+                            <li>CBS- Jaka Plaza Parañaque</li>
+                            <li>CBS- Libertad</li>
+                            <li>CBS- Moonwalk Brgy</li>
+                            <li>CBS- Naia</li>
+                            <li>CBS- Paso de Blas</li>
+                            <li>CBS- Pateros</li>
+                            <li>CBS- Quiapo</li>
+                            <li>CBS- Rada</li>
+                            <li>CBS- Savemore, Sta. Ana</li>
+                            <li>CBS- Tayuman</li>
+                            <li>CBS-Taft-UN</li>
 
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <button class="accordion">SAMSUNG</button>
+                    <div class="panel">
+                        <ul>
+                            <li>7th - 10th Flrs., Science Hub, Tower 4</li>
+                            <li>8th - 9th Flrs., Science Hub, Tower 3</li>
+                            <li>Batangas Branch Office</li>
+                            <li>Cagayan De Oro Branch Office</li>
+                            <li>Cebu City Branch Office</li>
+                            <li>Dagupan City Branch Office</li>
+                            <li>Davao City Branch Office</li>
+                            <li>Ilo-ilo Branch Office</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-                <img src="./img/logorow.png" width="20%" height="10%" alt="">
-            <div class="text-center" style="font-size: 200%;">
-                <a href="#" style="color: white;" class="fab fa-facebook"></a>
-                <a href="#" style="color: white;" class="fab fa-instagram"></a>
-                <a href="#" style="color: white;" class="fab fa-youtube"></a>
+            <div class="row">
+                <div class="col-md-4">
+                    <button class="accordion">HYPER/SUPERMARKETS</button>
+                    <div class="panel">
+                        <ul>
+                            <li>SSM Cubao / SM Hypermarket Cubao</li>
+                            <li>SSM Jazz / SM Hypermarket Jazz</li>
+                            <li>SVI Cubao / Cubao Supermarket</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <button class="accordion">SM MOLINO</button>
+                    <div class="panel">
+                        <ul>
+                            <li>Ace Hardware - Molino Main Square</li>
+                            <li>SM Appliance - SM Molino</li>
+                            <li>Watsons Molino Mall - Branch 249</li>
+                            <li>Pet Express - SM Molino</li>
+                            <li>Surplus Shop - SM Molino</li>
+                            <li>The SM Store - Molino</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <button class="accordion">SM MANILA</button>
+                    <div class="panel">
+                        <ul>
+                            <li>Ace Hardware - SM Manila</li>
+                            <li>Chris Sports - SM Manila</li>
+                            <li>Levi's Boutique - SM City Manila</li>
+                            <li>Surplus Shop - SM Manila</li>
+                            <li>Sports Central - SM Manila</li>
+                            <li>SM Manila Perimeter</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <button class="accordion">SM SAN LAZARO</button>
+                    <div class="panel">
+                        <ul>
+                            <li>Ace Hardware - SM San Lazaro</li>
+                            <li>The SM Store - San Lazaro</li>
+                            <li>SM Appliance - SM San Lazaro</li>
+                            <li>SVI San Lazaro / san Lazaro Supermarket</li>
+                            <li>Surplus Shop - SM San Lazaro</li>
+                            <li>Uniqlo - SM San Lazaro</li>
+                            <li>Watsons - SM San Lazaro</li>
+                            <li>SM San Lazaro Perimeter</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <button class="accordion">SM SUCAT</button>
+                    <div class="panel">
+                        <ul>
+                            <li>SSM Sucat / SM Hypermarket Sucat</li>
+                            <li>Ace Hardware - SM Sucat</li>
+                            <li>SM Appliance - SM Sucat</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div id="footer" style="color: grey; font-size: 60%; font-family: sans-serif; " xmlns:dc="http://purl.org/dc/elements/1.1/">
-                <p id="copyright" property="dc:rights">
-                    Copyright. © 2018 DJA Security Services. All rights reserved.
-                    <!--
+        </div>
+    </section>
+
+    <div class="text-center" style="background-color: #292929; min-width: 100%;">
+        <div style="padding-top: 1.8%" class="text-center">
+            <div class="text-center">
+                <div style="word-spacing: 5px; font-size: 70%; color: white;" class="text-center">
+                    <a class="bottom-nav-text" style="color: white; font-family: sans-serif;" href="#about"> About</a> <i style="font-size: 60%;" class="fa fa-circle bottom-nav-text" aria-hidden="true"></i>
+
+                    <a class=" bottom-nav-text" style="color: white; font-family: sans-serif;" href="#mission">Mission and Vision</a> <i style="font-size: 60%;" class="fa fa-circle bottom-nav-text" aria-hidden="true"></i>
+                    <a class="bottom-nav-text" style="color: white; font-family: sans-serif;" href="#apply"> Apply</a> <i style="font-size: 60%;" class="fa fa-circle bottom-nav-text" aria-hidden="true"></i>
+
+                    <a class="bottom-nav-text" style="color: white; font-family: sans-serif;" href="#contact"> Contact</a> <i style="font-size: 60%;" class="fa fa-circle bottom-nav-text" aria-hidden="true"></i>
+
+                    <a class="bottom-nav-text" style="font-family: sans-serif;" Ok href="#clients">
+                        <e style="color: white;">Clients</e>
+                    </a>
+
+                </div>
+                <hr class="light my-4">
+
+            </div>
+        </div>
+        <img src="./img/logorow.png" width="20%" height="10%" alt="">
+        <div class="text-center" style="font-size: 200%;">
+            <a href="#" style="color: white;" class="fab fa-facebook"></a>
+            <a href="#" style="color: white;" class="fab fa-instagram"></a>
+            <a href="#" style="color: white;" class="fab fa-youtube"></a>
+        </div>
+        <div id="footer" style="color: grey; font-size: 60%; font-family: sans-serif; " xmlns:dc="http://purl.org/dc/elements/1.1/">
+            <p id="copyright" property="dc:rights">
+                Copyright. © 2018 DJA Security Services. All rights reserved.
+                <!--
                 Copyright. &copy;
                 <span property="dc:dateCopyrighted">
                 <script type="text/javascript">
@@ -330,9 +506,9 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
                 </script></span>
                     <span property="dc:publisher">Famous 58. All rights reserved.</span>
 -->
-                </p>
-            </div>
+            </p>
         </div>
+    </div>
 
 
     <!-- Bootstrap core JavaScript
@@ -366,7 +542,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
         });
 
     </script>
-        <script>
+    <script>
         $("#myBtn a[href^='#']").on('click', function(e) {
 
             // prevent default anchor click behavior
@@ -535,13 +711,35 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 
     </script>
 
+    <!--    Accordion-->
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+
+    </script>
     <script>
         // When the user scrolls down 20px from the top of the document, show the button
         window.onscroll = function() {
             scrollFunction()
         };
-        
-               // Get the navbar
+
+        // Get the navbar
         var navbar = document.getElementById("navbad");
 
         // Get the offset position of the navbar
@@ -608,7 +806,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 
     </script>
 -->
-<script src="./bundle.js"></script>
+    <script src="./bundle.js"></script>
 </body>
 
 </html>
