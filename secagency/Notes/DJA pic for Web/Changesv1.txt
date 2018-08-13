@@ -1,0 +1,8 @@
+Changes v1.0:
+
+1. Change tabs/ boxes color #333333 to color #00376a
+2. Add Headline.png on top and remove DJA Security Services text
+3. Add row of logos at the bottom
+4. At the most bottom part, add quick links and click to top button just like what we did in Famous58
+5. Make the tab float while scrolling for ease of access]
+6. Add Gallery link for photos and show all photos as thumbnail that enlarges upon getting clicked below Mission & Vision pane
