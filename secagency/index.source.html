@@ -124,17 +124,98 @@
 
 
     <div id="navbad">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="z-index: 1000;" id="navscr">
-            <a class="navbar-brand" style="padding: 0; margin: 0;" href="./index.html">
-                <img src="./img/WE.png" style="" alt="DJA" height="7%" width="7%">
-                <e style="font-family: sans-serif; font-size: 120%;">DJA Security Services</e>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" style="position: fixed; left: 85%; padding-top: 0.1%; padding-bottom: 0.1%; " data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <style>
+            @media (min-width: 996px) {
+                .hohsis {
+                    padding: 0.1%;
+                }
+                .momemer {
+                    display: none;
+                    visibility: hidden;
+                    
+                }
+            }
 
-            <div class="collapse navbar-collapse" id="navbarColor03">
-                <ul class="navbar-nav mr-auto" style="font-size: 120%;">
+            .memer {
+                width: 22%;
+            }
+
+            .schmemer {
+                width: 3%;
+            }
+
+            @media (max-width: 991px) {
+                .jamemer {
+                    width: 5%;
+                    margin: auto;
+                }
+                .memer {
+                    width: 45%;
+                }
+                .omemer {
+                    width: 20%;
+                }
+                .schmemer {
+                    width: 5%;
+                }
+                                .momemer {
+                    display: none;
+                    visibility: hidden;
+                    
+                }
+                
+            }
+
+            @media (max-width: 600px) {
+            @media (max-width: 600px) {
+                .schmemer {
+                    width: auto;
+                    height: 38px;
+                }
+                                .momemer {
+                    display: none;
+                    visibility: hidden;
+                    
+                }
+
+            }
+
+            @media (max-width: 460px) {
+
+                .memer {
+                    visibility: hidden;
+                }
+                                .momemer {
+                    display:flex;
+                    visibility:visible;
+                    
+                }
+
+            }
+
+        </style>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light hohsis" style="z-index: 1000;" id="navscr">
+            <img class="schmemer" src="./img/WE.png" style="" alt="DJA">
+            <div class="omemer"> </div>
+            <a class="navbar-brand memer" style="padding: 0; margin: 0;" href="./index.html">
+
+                <e style="font-family: sans-serif; font-size: auto; width:100%; margin-left: 0;">DJA Security Services</e>
+            </a>
+            <div class="jamemer">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" style=" margin: auto; margin-right: 0; " data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="margin: auto; margin-right: 0;"></span>
+            </button>
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="navbarColor03" style="width:50%;">
+               <div class="momemer">
+                <a class="navbar-brand " style="padding: 0; margin: 0;" href="./index.html">
+
+                    <e  style="font-family: sans-serif; font-size: auto; width:100%; margin-left: 0;">DJA Security Services</e>
+                </a>
+                </div>
+                <ul class="navbar-nav mr-auto" style="font-size: 120%; margin: auto;">
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
                     </li>
@@ -154,9 +235,14 @@
                         <a class="nav-link" href="#clients">Clients</a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" placeholder="Search" type="text">
-                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+
+            </div>
+            <div class="collapse navbar-collapse" id="navbarColor03" style="width:25%;">
+                <form class="form-inline my-2 my-lg-0" style="margin: auto; margin-right: 0; width: 100%;">
+                    <div style="margin: auto; margin-right: 0;">
+                        <input class="form-control mr-sm-2" placeholder="Search" type="text">
+                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                    </div>
                 </form>
             </div>
         </nav>
@@ -357,6 +443,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
                 max-height: 30%;
                 height: 30%
             }
+
             .noscroll {
                 overflow-x: hidden;
                 overflow-y: hidden;
