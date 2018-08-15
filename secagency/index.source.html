@@ -125,6 +125,45 @@
 
     <div id="navbad">
         <style>
+            @media (min-width: 1024px) {
+                .schmemer {
+                    width,
+                    height: 64px;
+                }
+                .memer {
+                    min-width: 34%
+                }
+                .lomemer {
+                    font-size: 2px;
+                }
+            }
+
+            @media (min-width: 1176px) {
+                .schmemer {
+                    width,
+                    height: 64px;
+                }
+                .memer {
+                    min-width: 27%
+                }
+                .lomemer {
+                    font-size: 2px;
+                }
+            }
+
+            @media (min-width: 1182px) {
+                .schmemer {
+                    width,
+                    height: 64px;
+                }
+                .memer {
+                    min-width: 25%
+                }
+                .lomemer {
+                    font-size: 2px;
+                }
+            }
+
             @media (min-width: 601px) {
                 .schmemer {
                     width,
@@ -234,7 +273,7 @@
                         <e style="font-family: sans-serif; font-size: auto; width:100%; margin-left: 0;">DJA Security Services</e>
                     </a>
                 </div>
-                <ul class="navbar-nav mr-auto" style="font-size: 120%; margin: auto;">
+                <ul class="navbar-nav mr-auto lomemer" style="font-size: 120%; margin: auto;">
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
                     </li>
@@ -435,6 +474,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
             /* Style the buttons that are used to open and close the accordion panel */
 
             .accordion {
+                z-index: -100;
                 transition: 0.4s;
                 margin: auto;
             }
@@ -444,11 +484,13 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
             .active,
             .accordion:hover {
                 background-color: dimgray;
+                z-index: -100;
             }
 
             /* Style the accordion panel. Note: hidden by default */
 
             .panel {
+                z-index: -100;
                 display: none;
                 overflow-y: scroll;
                 overflow-x: hidden;
@@ -457,6 +499,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
             }
 
             .chinabank {
+                z-index: -100;
                 display: none;
                 overflow-y: scroll;
                 overflow-x: hidden;
@@ -465,6 +508,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
             }
 
             .noscroll {
+                z-index: -100;
                 overflow-x: hidden;
                 overflow-y: hidden;
             }
