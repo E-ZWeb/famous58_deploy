@@ -125,6 +125,25 @@
 
     <div id="navbad">
         <style>
+            @media (min-width: 601px) {
+                .schmemer {
+                    width,
+                    height: 64px;
+                }
+                .memer {}
+            }
+
+            @media (min-width: 996px) {
+                .schmemer {
+                    width,
+                    height: 64px;
+                }
+                .memer {
+                    font-size: 32px;
+
+                }
+            }
+
             @media (min-width: 996px) {
                 .hohsis {
                     padding: 0.1%;
@@ -132,7 +151,7 @@
                 .momemer {
                     display: none;
                     visibility: hidden;
-                    
+
                 }
             }
 
@@ -158,40 +177,40 @@
                 .schmemer {
                     width: 5%;
                 }
-                                .momemer {
+                .momemer {
                     display: none;
                     visibility: hidden;
-                    
+
                 }
-                
+
             }
 
             @media (max-width: 600px) {
-            @media (max-width: 600px) {
-                .schmemer {
-                    width: auto;
-                    height: 38px;
-                }
-                                .momemer {
-                    display: none;
-                    visibility: hidden;
-                    
-                }
+                @media (max-width: 600px) {
+                    .schmemer {
+                        width: auto;
+                        height: 38px;
+                    }
+                    .momemer {
+                        display: none;
+                        visibility: hidden;
 
-            }
+                    }
 
-            @media (max-width: 460px) {
-
-                .memer {
-                    visibility: hidden;
-                }
-                                .momemer {
-                    display:flex;
-                    visibility:visible;
-                    
                 }
 
-            }
+                @media (max-width: 460px) {
+
+                    .memer {
+                        visibility: hidden;
+                    }
+                    .momemer {
+                        display: flex;
+                        visibility: visible;
+
+                    }
+
+                }
 
         </style>
         <nav class="navbar navbar-expand-lg navbar-light bg-light hohsis" style="z-index: 1000;" id="navscr">
@@ -209,11 +228,11 @@
 
 
             <div class="collapse navbar-collapse" id="navbarColor03" style="width:50%;">
-               <div class="momemer">
-                <a class="navbar-brand " style="padding: 0; margin: 0;" href="./index.html">
+                <div class="momemer">
+                    <a class="navbar-brand " style="padding: 0; margin: 0;" href="./index.html">
 
-                    <e  style="font-family: sans-serif; font-size: auto; width:100%; margin-left: 0;">DJA Security Services</e>
-                </a>
+                        <e style="font-family: sans-serif; font-size: auto; width:100%; margin-left: 0;">DJA Security Services</e>
+                    </a>
                 </div>
                 <ul class="navbar-nav mr-auto" style="font-size: 120%; margin: auto;">
                     <li class="nav-item">
@@ -411,12 +430,13 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 -->
         </div>
     </section>
-    <section class="section-format container">
+    <section class="section-format container" style="align-content: center;">
         <style>
             /* Style the buttons that are used to open and close the accordion panel */
 
             .accordion {
                 transition: 0.4s;
+                margin: auto;
             }
 
             /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -433,7 +453,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
                 overflow-y: scroll;
                 overflow-x: hidden;
                 max-height: 60%;
-                height: 60%
+                height: 60%;
             }
 
             .chinabank {
@@ -455,7 +475,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
             <small><i> click to show list</i></small>
 
             <div class="row">
-                <div><button class="accordion btn btn">SM Mall of Asia</button>
+                <div class="col-sm-4"><button class="accordion btn btn">SM Mall of Asia</button>
                     <div class="panel">
                         <ul>
                             <li>Ace Hardware Philippines, Inc.</li>
@@ -481,7 +501,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
                         </ul>
                     </div>
                 </div>
-                <div><button class="accordion btn btn">SM Novaliches</button>
+                <div class="col-sm-4"><button class="accordion btn btn">SM Novaliches</button>
                     <div class="panel">
                         <ul>
                             <li>Ace Hardware Philippines, Inc.</li>
@@ -495,7 +515,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
                         </ul>
                     </div>
                 </div>
-                <div><button class="accordion btn btn">Samsung</button>
+                <div class="col-sm-4"><button class="accordion btn btn">Samsung</button>
                     <div class="panel">
                         <ul>
                             <li>7th - 10th Flrs., Science Hub, Tower 4</li>
@@ -509,7 +529,9 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
                         </ul>
                     </div>
                 </div>
-                <div><button class="accordion btn btn">Residences</button>
+            </div>
+            <div class="row">
+                <div class="col-sm-4"><button class="accordion btn btn">Residences</button>
                     <div class="panel">
                         <ul>
                             <li>Jazz Residences Condominium Corp.</li>
@@ -526,7 +548,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
                         </ul>
                     </div>
                 </div>
-                <div><button class="accordion btn btn">China Bank</button>
+                <div class="col-sm-4"><button class="accordion btn btn">China Bank</button>
                     <div class="panel chinabank">
                         <ul>
                             <li>CBC - Five E-com Center</li>
@@ -588,7 +610,9 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
                         </ul>
                     </div>
                 </div>
-                <div><button class="accordion btn btn">Hyper/Supermarket</button>
+            </div>
+            <div class="row">
+                <div class="col-sm"><button class="accordion btn btn ">Hyper/Supermarket</button>
                     <div class="panel noscroll">
                         <ul>
                             <li>SSM Cubao / SM Hypermarket Cubao</li>
@@ -597,7 +621,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
                         </ul>
                     </div>
                 </div>
-                <div><button class="accordion btn btn">SM Molino</button>
+                <div class="col-sm"><button class="accordion btn btn">SM Molino</button>
                     <div class="panel">
                         <ul>
                             <li>Ace Hardware - Molino Main Square</li>
@@ -609,7 +633,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
                         </ul>
                     </div>
                 </div>
-                <div><button class="accordion btn btn">SM Manila</button>
+                <div class="col-sm"><button class="accordion btn btn">SM Manila</button>
                     <div class="panel">
                         <ul>
                             <li>Ace Hardware - SM Manila</li>
@@ -621,8 +645,10 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
                         </ul>
                     </div>
                 </div>
+            </div>
+            <div class="row">
 
-                <div><button class="accordion btn btn">SM San Lazaro</button>
+                <div class="col-sm-4"><button class="accordion btn btn">SM San Lazaro</button>
                     <div class="panel">
                         <ul>
                             <li>Ace Hardware - SM San Lazaro</li>
@@ -636,7 +662,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
                         </ul>
                     </div>
                 </div>
-                <div><button class="accordion btn btn">SM Sucat</button>
+                <div class="col-sm-4"> <button class="accordion btn btn">SM Sucat</button>
                     <div class="panel noscroll">
                         <ul>
                             <li>SSM Sucat / SM Hypermarket Sucat</li>
@@ -645,6 +671,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
                         </ul>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
