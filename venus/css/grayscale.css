@@ -109,10 +109,19 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
-
 .masthead h2 {
+  font-family: 'Varela Round';
+  font-size: 2.0rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.6rem;
+  background: -webkit-linear-gradient(rgb(238, 201, 179), rgba(241, 208, 98, 0));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.masthead h3 {
   max-width: 20rem;
   font-size: 1rem;
+  color: rgb(41, 34, 80);
 }
 
 @media (min-width: 768px) {
