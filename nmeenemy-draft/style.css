@@ -7,3 +7,14 @@
     width: 100%;
 }
 /* Tooltip container */
+
+.head-bullets {
+    font-size: 150%;
+}
+
+.head-bullets ul li {
+    font-size: 75%;
+}
+.head-bullets ul li a button {
+    font-size: 75%;
+}
