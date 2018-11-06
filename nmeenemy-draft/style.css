@@ -10,6 +10,7 @@
 
 .head-bullets {
     font-size: 150%;
+    line-height: 160%
 }
 
 .head-bullets ul li {
@@ -17,6 +18,9 @@
 }
 .head-bullets ul li a button {
     font-size: 75%;
+}
+.head-bullet-bullets {
+    line-height: 150%;
 }
 
 /*
