@@ -10,11 +10,15 @@
 
 .head-bullets {
     font-size: 150%;
-    line-height: 160%
+    line-height: 160%;
 }
 
+
+
 .head-bullets ul li {
-    font-size: 75%;
+    font-size: 2090px;
+    margin: 0 0 300px 0;
+
 }
 .head-bullets ul li a button {
     font-size: 75%;
@@ -68,4 +72,23 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+}
+.head-bullet {
+    margin: 0 0 3%;
+}
+
+ @media only screen and (min-width: 1280px) {
+    .head-bullets {
+        font-size: 170%
+    }
+}
+ @media only screen and (min-width: 1920px) {
+    .head-bullets {
+        font-size: 200%
+    }
+}
+ @media only screen and (min-width: 3840px) {
+    .head-bullets {
+        font-size: 400%
+    }
 }
