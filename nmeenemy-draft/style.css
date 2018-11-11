@@ -92,3 +92,7 @@
         font-size: 400%
     }
 }
+
+.research-quote blockquote.text-center {
+    font-size: 150%;
+}
