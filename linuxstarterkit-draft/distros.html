@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	 crossorigin="anonymous">
+
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+	 crossorigin="anonymous">
+
+	</script>
+	<script src="./js/bootstrap.js">
+
+	</script>
+	<script src="script.js">
+
+	</script>
+	<link href="./bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">Linux Starter Kit</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor03">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="./index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./distros.html">Distros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./install.html">Installation</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./drivers.html">Drivers (GPU)</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./about.html">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./opinion.html">Opinion</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./works.html">Works Cited</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./more.html">Resources</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="jumbotron" style="width: 960px">
+    <h2 class="display-3">Picking Your First Linux Distro</h2>
+    <p class="lead">Picking your first Linux distribution can be a daunting task. You might face some questions such as but not limited to:</p>
+    <ul>
+        <li>
+            <a href="#what">What is a linux distribution?</a>
+        </li>
+        <li>
+            <a href="#many">Why are there so many distros?</a> 
+        </li>
+        <li>
+            <a href="#does">Does it matter which one I use?</a> 
+        </li>
+        <li>
+            <a href="#which">Which Linux distribution is better?</a>
+        </li>
+        <li>
+            <a href="#why">Why are people telling me to “Install Gentoo”?</a>
+        </li>
+    </ul>
+    <p class="lead ml-5">These are completely normal questions to have if you are a new user. There are a lot of moving parts in the world of Linux Distributions. To illustrate this here is <a href="https://distrowatch.com/dwres.php?resource=family-tree"> DistroWatch's </a> "Periodic Table of Distros" (Figure 1). To make matters worse the periodic table is actually a simplified and slimmed down picture of Linux distros. For a full family tree of linux distributions see <a href="https://distrowatch.com/images/other/distro-family-tree.png">DistroWatch's family tree image</a>. It's really mind blowing to look at. </p>
+    <figure class="figure">
+    <img class="img-fluid"style="width: 90vw; max-height: 60%; max-width: 960px; display: block;" src="periodic-table-of-distro-edit.png" alt="Card image">
+    <figcaption class="figure-caption">Visual family tree of Linux distributions DistroWatch.com</figcaption>
+    </figure>
+    
+    <p class="lead ml-5">Despite this it is actually quite easy to break these down for a new user. Only a few of these distributions are truly user-friendly and general-purpose so only a few are even worth considering for a fist time user.</p>
+
+    <h3> What is a Linux distribution? </h3>
+    <p class="lead ml-5">To be clear, "distro" is just short for "distribution". 
+    </p>
+    <p class="lead ml-5">In short a distribution is just a
+        variation of linux configured and implemented
+         differently. The difference often being how the user
+         interacts with the system. To demonstrate, (Figure 2) below we have Ubuntu 18.04 (left) and OpenSUSE Tumbleweed (right). You can use the slider to compare how their interfaces differ.
+    </p>
+    
+
+    <div id="comparison">
+        <figure>
+            <div id="divisor"></div>
+        </figure>
+        <input type="range" min="0" max="100" value="50" id="slider" oninput="moveDivisor()">
+    </div>
+    <figcaption class="figure-caption">Visual family tree of Linux</figcaption>
+    <br>
+    <p class="lead ml-5">Ubuntu and OpenSUSE are examples of two different distros developed by two different companies, Canonical Ltd. and SUSE respectively. They take very different approaches to the user interface. While both interfaces include most of the same features functionally, OpenSUSE uses the <a href="https://kde.org/">KDE</a> interface which follows a similar format of the Windows UI while Ubuntu uses the <a href="https://www.gnome.org/">GNOME</a> interface which has it's own philosophy and design for graphical user interfaces.
+    </p>
+
+    <p class="lead ml-5">
+        The types of graphical interfaces for Linux Operating Systems such as GNOME and KDE mentioned earlier, are referred to as Desktop Environments or DEs for short. The Desktop Environment is usually developed by a seperate organization but then reconfigured and shipped by the distro. You will notice the KDE foundation and the GNOME project are seperate entities from Canonical Ltd. and SUSE. This raises and important question...
+    </p>
+
+    <h3>Why are there so many distros?</h3>
+
+         
+    <p class="lead ml-5">
+        As we've discussed there are a lot of Linux distros and organizations involved in their development. So why is that the case? Well to understand this it helps to know about the history of Linux. There is an overview on the <a href="/home">home</a> page. The gist of it is that the <a href="https://opensource.com/resources/what-open-source">open source </a> nature of Linux means anyone can study and modify the code and redistribute it under certain conditions. This allows companies such as Coninical and SUSE to distribute it with commercial services. And so there are now thousands of Linux distros each with a special niche. So what does this mean to a new user?
+    </p>
+
+    <h3>Does it matter which distro I use?</h3>
+
+         
+    <p class="lead ml-5">
+        In general it does not matter as long as the one you pick is user friendly.I've compiled a list of distros that are user friendly
+        <a href="#distros"> here </a>. However do note that there are a lot of distributions with a niche use case that you might like to use. If you are interested in seeing which distro is right for your use case check out <a href="https://distrochooser.de/en">distrochooser</a> a website with a quiz which finds a distro that matches your use case. Otherwise just use a general-purpose distro which is what I will be listing. 
+    </p>
+
+    
+</div>
+<script src="script.js"></script>
+</body>
+</html>
