@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>repl.it</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous">
+	</script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous">
+	</script>
+        <script src="./js/bootstrap.js">
+	</script>
+        <link href="./bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Linux Starter Kit</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarColor03" aria-controls="navbarColor03"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarColor03">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">Home<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./distros.html">Distros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./install.html">Installation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./drivers.html">Drivers (GPU)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./opinion.html">Opinion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./works.html">Works Cited</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./more.html">Resources</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="jumbotron" style="max-width: 960px; width: 90vw;">
+
+
+
+
+            <h1 id="linux">Linux</h1>
+            <h2 id="what-is-linux-">What is Linux?</h2>
+            <ul>
+                <li>(The Linux Foundation 2019)According to The Linux Foundation,
+                    Linux is an operating system much like Windows and MacOSX.
+                    <ul>
+                        <li>An operating system is the software that takes care
+                            of low-level hardware related tasks for you.</li>
+                        <li>Linux is specifically just the kernel of the
+                            operating system which handles low level hardware
+                            tasks for higher level programs.</li>
+                        <li>The rest of the operating system consists of much
+                            smaller programs that handle specific tasks such as
+                            the GNU utilities which is a collection of programs
+                            typically shipped with linux which handle basic
+                            tasks often taken for granted. </li>
+                        <li>Coreutils info pic. </li>
+                        <li>The rest of the operating system depends on the
+                            distribution. <ul>
+                                <li>Usually a 3rd party company or entity will
+                                    package GNU/Linux with higher level software
+                                    that you would normally use such as all the
+                                    graphics and interfaces you see on the
+                                    screen.</li>
+                                <li>See our distros page for more about distros.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <figure class="figure">
+                <img class="img-fluid" style="width: 50vw; max-height: 60%;
+                    max-width: 960px; display: block;"
+                    src="linux-layers.png" alt="Card image">
+                <figcaption class="figure-caption">(Watkiss 2018) Figure 3 Visual family tree of Linux
+                    distributions DistroWatch.com taken from linux.pictures</figcaption>
+            </figure>
+            
+            <h2 id="history">History</h2>
+            <h3 id="prelude">Prelude</h3>
+            <ul>
+                <li>(Ritchie 1984) Unix OS was developed in 1969 by Bell Labs.
+                    <ul>
+                        <li>Unix was fully developed and written in the C
+                            programming language in 1973 making it available to
+                            to be ported to many different computers. </li>
+                    </ul>
+                </li>
+                <li>(Raymond 2003) For legal reasons at the time AT&amp;T had to
+                    share the C source code of Unix to anyone who requested it.
+                    This caused it to grow quickly and get adopted by
+                    educational and non-profit institutions.</li>
+                <li>However eventually AT&amp;T parted ways with Bell Labs
+                    allowing Bell Labs to make Unix proprietary, hiding the
+                    source code.</li>
+                <li>This meant it could no longer be used for educational
+                    purposes as it could not be modified and studied (15)</li>
+                <li>(Stallman 1983) Because of this Richard Stallman began the
+                    GNU project.<ul>
+                        <li>The GNU project aimed to create free and open source
+                            alternatives to the Unix system. </li>
+                        <li>In time the GNU project grew and consisted of a
+                            large code base of robust tools and utilities needed
+                            for an operating system. </li>
+                        <li>However the GNU project lacked a kernel, as
+                            we&#39;ve learned is the critical component needed
+                            to interface with hardware. <ul>
+                                <li>This is where linux came into play as it
+                                    supplied the GNU project with a Kernel.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <h3 id="a-new-era-of-open-source">A new Era of Open Source</h3>
+            <ul>
+                <li>(Torvalds 1991) In 1991 at the university of helsinki, Linus
+                    torvalds began working on the Linux kernel. For a period of
+                    time Linux had no good set of tools and was borrowing from
+                    the MINIX project which was problematic due to software
+                    Licensing. </li>
+                <li>Eventually Torvalds found out about the GNU project. <ul>
+                        <li>Torvalds incorporated the GNU utilities into Linux
+                            and adopted the GNU General Public License (GPL).
+                            Now we have (what was considered at the time) a
+                            usable operating system under an open source
+                            license. <h4 id="what-is-the-gpl-">What is the GPL?</h4>
+                            <ul>
+                                <li>(Stallman 2003) The GPL is a software
+                                    license that is the most important part of
+                                    the GNU project. </li>
+                                <li>It&#39;s goal is to give the user freedom to
+                                    study and modify the source code of the
+                                    software while also guaranteeing any changes
+                                    made to the software must be made public.
+                                    This way you can&#39;t take advantage of the
+                                    software without contributing back. </li>
+                                <li>For more information on open source software
+                                    and licensing take a look at the Open Source
+                                    Initiative website. <ul>
+                                        <li><a href="https://opensource.org/">https://opensource.org/</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <h3 id="linux-takes-off-">Linux Takes off.</h3>
+            <ul>
+                <li>(Garfinkel 2003) Linux began making it into the mainstream
+                    when companies started taking advantage of it&#39;s open
+                    source nature for their projects.<ul>
+                        <li>NASA began using Linux in supercomputers as it was
+                            much less expensive to have many smaller machines
+                            running linux than to have a large expensive
+                            enterprise machine.</li>
+                        <li>Dell, IBM, and HP also began offering Linux support
+                            on their consumer PCs to combat Microsoft&#39;s
+                            monopoly on Desktops. </li>
+                    </ul>
+                </li>
+            </ul>
+            <h3 id="today">Today</h3>
+            <ul>
+                <li><p>Today Linux is used everywhere in technology often in
+                        places people don&#39;t think about. </p>
+                    <ul>
+                        <li>Web servers<ul>
+                                <li>This website and millions of others are
+                                    running Linux web servers. </li>
+                            </ul>
+                        </li>
+                        <li>Android Phones<ul>
+                                <li>One of the most recent rises in Linux is
+                                    android phones which are all running on top
+                                    of Linux. </li>
+                            </ul>
+                        </li>
+                        <li>Supercomputers</li>
+                        <li>Robots<ul>
+                                <li>As an example, the well known advanced Nao
+                                    robots used in education run a GNU/Linux OS
+                                    called NAOqi OS</li>
+                                <li>Obviously the licensing of linux makes it
+                                    perfect for educational and scientific use
+                                    cases.</li>
+                            </ul>
+                        </li>
+                        <li>Desktops<ul>
+                                <li>(Logba 2019) Linux has a very small market
+                                    share on the Desktop currently at around
+                                    3.37%.<ul>
+                                        <li>Microsoft Windows is the dominant
+                                            Desktop OS still but Linux is
+                                            gaining some traction recently for
+                                            reasons not quite known. Possibly
+                                            many factors involved.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><p>Linux is trusted and used by many corporations including
+                        Microsoft, often thought of as a rival of Linux. </p>
+                </li>
+                <li>(MICROSOFT WINDOWS SERVER TEAM
+                    2015) Microsoft like many companies embraces Linux and open
+                    source as it is a crucial part of their infrastructure.
+                </li>
+            </ul>
+
+        </div>
+        </body>
+        </html>
