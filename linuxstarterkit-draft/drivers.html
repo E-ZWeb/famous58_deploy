@@ -1,58 +1,250 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>repl.it</title>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-	 crossorigin="anonymous">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>repl.it</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous">
 	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-	 crossorigin="anonymous">
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous">
 	</script>
-	<script src="./js/bootstrap.js">
+        <script src="./js/bootstrap.js">
 	</script>
-	<link href="./bootstrap.min.css" rel="stylesheet" type="text/css" />
-	<link href="style.css" rel="stylesheet" type="text/css" />
-</head>
+        <link href="./bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
 
-<body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="#">Linux Starter Kit</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Linux Starter Kit</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarColor03" aria-controls="navbarColor03"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarColor03">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="./index.html">Home<span class="sr-only">(current)</span></a>
+            <div class="collapse navbar-collapse" id="navbarColor03">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">Home<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./distros.html">Distros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./install.html">Installation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./drivers.html">Drivers (GPU)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./opinion.html">Opinion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./works.html">Works Cited</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./more.html">Resources</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="jumbotron">
+            <h1 id="hardwaredrivers">Hardware Drivers</h1>
+
+            <h2 id="driversonlinux">Drivers on Linux</h2>
+
+            <p>The linux kernel by default on most distributions has all the
+                necessary drivers and software to run on your hardware.
+                Therefore very little work should have to be done to setup your
+                hardware. The exceptions are few.</p>
+
+            <h3 id="graphicscards">Graphics Cards</h3>
+
+            <ul>
+                <li>This is the main exception to the rule. Graphics card
+                    vendors typically keep their documentation hidden from
+                    developers so the Linux Kernel Doesn't contain drivers for
+                    AMD and Nvidia graphics cards by default. </li>
+
+                <li>Recently however AMD has started pushing code for their
+                    graphics cards to Linux
+
+
+                    <ul>
+                        <li>Most new AMD graphics cards do not require
+                            additional drivers.</li></ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./distros.html">Distros</a>
+            </ul>
+
+            <h3 id="networkcards">Network Cards</h3>
+
+            <ul>
+                <li>There are a few exotic Wifi cards which require additional
+                    drivers to be installed. However since this is such a rare
+                    occurence now it will not be covered in depth. If you do
+                    encounter an issue just google the model with the keywords
+                    "driver linux". Each card will likely be a special case.
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./install.html">Installation</a>
+            </ul>
+
+            <h3 id="other">Other</h3>
+
+            <ul>
+                <li>For anything else you encouter driver issues with just
+                    google the hardware model with the keywords "driver linux".
+                    You are likely to find a solution.</li>
+            </ul>
+
+            <h2 id="nvidiagraphicsdrivers">Nvidia Graphics Drivers</h2>
+
+            <h3 id="doyouneedthem">Do you need them?</h3>
+
+            <ul>
+                <li><p>You only need to install the proprietary nvidia drivers
+                        if you use applications that use the GPU heavily. </p>
+                    <ul>
+                        <li>Games</li>
+
+                        <li>Graphics Editing</li>
+
+                        <li>Video Editing</li>
+
+                        <li>etc.</li></ul></li>
+
+                <li><p>A good way to find out if you need them is to just use
+                        your system as you normally would.</p>
+
+                    <p><ul>
+                            <li>If you encounter no issues then you probably
+                                don't need the drivers. The default drivers
+                                should suffice. </li></p>
+
+                        <p><li>If you do however encounter graphics issues you
+                                should install them. </li></ul>
+
+                        <p></p></li>
+                </ul></p>
+
+            <h3 id="howtoinstallthem">How to install them</h3>
+
+            <h4 id="onkubuntu">On Kubuntu</h4>
+
+            <pre><code>- If you chose kubuntu as your distro then it's quite easy
+            </code></pre>
+            <ol>
+                <li><p>Open the applications menu in the bottom left. </p></li>
+                <li><p>Search for "Driver Manager"</p></li>
+
+                <li><p>Open the "Driver Manager" application</p></li>
+
+                <li><p>Wait for it to scan for your hardware. </p></li>
+
+                <li><p>It should show some options for drivers. </p></li>
+
+                <li><p>Select the one labaled "NVIDIA driver" with the latest
+                        version number.</p>
+
+                    <p><ul>
+                            <li>It will usually say "(recommended)" next to the
+                                best option</li></ul></p></li>
+
+                <li><p>Click "Apply"</p></li>
+
+                <li><p>Wait for it to finish applying</p></li>
+
+                <li><p>Wait for it to reload</p></li>
+
+                <li><p>It will provide an prompt to restart.</p>
+
+                    <p><ol>
+                            <li>Click it and restart your PC</li></ol>
+
+                        <p></p></li></p>
+
+                <p><li><p>Now your graphics drivers should be installed and
+                            working.</p></p>
+
+                    <ol>
+                        <li>To ensure it worked search for "Nvidia X server
+                            settings" in the applications menu</li>
+
+                        <li>If the installation worked it should appear and when
+                            you open it it should look something like this.
+                        </li></ol>
+
+                    <p></li></p>
+
+                <p><li><p>Consider installing Steam and playing Dota 2 to test
+                            out the graphics driver.</p></p>
+
+                    <p><ul>
+                            <li>The reason for using Dota 2 is because it uses
+                                many features of the drivers making it a good
+                                way to test.</li></p>
+
+                        <p><li>If you have a powerful card Dota 2 should run
+                                smoothly with no issues. </li></ul></p>
+
+                    <p></li>
+                </ol></p>
+
+            <ul>
+                <li>If you do encounter issues you need to seek support from
+                    Nvidia.
+
+
+                    <ul>
+                        <li>Nvidia is responsible for making these drivers
+                            available to you as a consumer. </li></ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./drivers.html">Drivers (GPU)</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./about.html">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./opinion.html">Opinion</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./works.html">Works Cited</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./more.html">Resources</a>
+            </ul>
+
+            <h4 id="onotherdistros">On other distros</h4>
+
+            <ul>
+                <li>Most distros provide detailed instructions to setup graphics
+                    drivers</li>
+
+                <li>for most Ubuntu derivatives like kubuntu it should be a
+                    similar process as above.</li>
+            </ul>
+
+            <h4 id="ineednewergraphicsdriversthanwhatifoundinthedrivermanager">I
+                need newer graphics drivers than what I found in the driver
+                manager.</h4>
+
+            <ul>
+                <li>If you are a serious gamer or use graphically intense
+                    software you may want to have the absolute latest drivers.</li>
+                <li>Ubuntu handbook provides the most up-to-date instructions to
+                    install an additional software source for Nvidia graphics
+                    drivers.
+                    http://ubuntuhandbook.org/index.php/2019/03/install-nvidia-418-43-g-sync-support-ubuntu-18-04/</li>
+            </ul>
+
+            <h4 id="additionalhelp">Additional help</h4>
+
+            <ul>
+                <li>If you have issues with the drivers consider looking for a
+                    solution and if you can't find anything report your issue on
+                    the nvidia linux forums
+
+
+                    <ul>
+                        <li>https://devtalk.nvidia.com/default/board/98/</li></ul>
                 </li>
             </ul>
         </div>
-    </nav>
-    
-  </body>
+    </body>
 </html>

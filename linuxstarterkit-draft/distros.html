@@ -1,190 +1,253 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>repl.it</title>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-	 crossorigin="anonymous">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>repl.it</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous">
 
 	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-	 crossorigin="anonymous">
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous">
 
 	</script>
-	<script src="./js/bootstrap.js">
+        <script src="./js/bootstrap.js">
 
 	</script>
-	<script src="script.js">
+        <script src="script.js">
 
 	</script>
-	<link href="./bootstrap.min.css" rel="stylesheet" type="text/css" />
-	<link href="style.css" rel="stylesheet" type="text/css" />
-</head>
+        <link href="./bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
 
-<body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="#">Linux Starter Kit</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarColor03">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="./index.html">Home<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./distros.html">Distros</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./install.html">Installation</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./drivers.html">Drivers (GPU)</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./about.html">About Me</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./opinion.html">Opinion</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./works.html">Works Cited</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./more.html">Resources</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-<div class="jumbotron" style="max-width: 960px; width: 90vw;">
-    <h2 class="display-3 text-primary">Picking Your First Linux Distro</h2>
-    <p class="lead">Picking your first distribution of linux can be a daunting task. This page will answer two
-         major questions about linux distributions and provide a list of user-friendly distributions to pick from.</p>
-    <ul>
-        <li>
-            <a href="#what">What is a linux distribution?</a>
-        </li>
-        <li>
-            <a href="#does">Does it matter which one I use?</a> 
-        </li>
-        <li>
-            <a href="#list">List of Distributions</a> 
-        </li>
-    </ul>
-
-
-    <h3 id="what" class="text-primary"> What is a Linux distribution? </h3>
-    <p class="lead ml-5">To be clear, "distro" is just short for "distribution". 
-    </p>
-    <p class="lead ml-5">In short a distribution is just a
-        variation of linux configured and implemented
-         differently. 
-    </p>
-       <p class="lead ml-5">There are many many linux distros out there. Thousands of linux distributions have been
-            developed by corporations, governments, and hobbyists to fill specific niches. To illustrate this here 
-            is <a href="https://distrowatch.com/dwres.php?resource=family-tree"> DistroWatch's </a>
-             "Periodic Table of Distros" (Figure 1). To make matters worse the 
-            periodic table is actually a simplified and slimmed down picture of Linux distros. For a full family tree
-             of linux distributions see 
-             <a href="https://distrowatch.com/images/other/distro-family-tree.png">DistroWatch's family tree image</a>. 
-             It's really mind blowing to look at. </p>
-    <figure class="figure">
-    <img class="img-fluid"style="width: 90vw; max-height: 60%; max-width: 960px; display: block;" src="periodic-table-of-distro-edit.png" alt="Card image">
-    <figcaption class="figure-caption">Visual family tree of Linux distributions DistroWatch.com</figcaption>
-    </figure>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Linux Starter Kit</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarColor03" aria-controls="navbarColor03"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor03">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">Home<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./distros.html">Distros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./install.html">Installation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./drivers.html">Drivers (GPU)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./opinion.html">Opinion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./works.html">Works Cited</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./more.html">Resources</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="jumbotron" style="max-width: 960px; width: 90vw;">
+            <h2 class="display-3 text-primary">Picking Your First Linux Distro</h2>
+            <p class="lead">Picking your first distribution of linux can be a
+                daunting task. This page will help clear things up and provide a
+                list of distros to choose from.</p>
+            <ul>
+                <li>
+                    <a href="#what">What is a linux distribution?</a>
+                </li>
+                <li>
+                    <a href="#does">Does it matter which one I use?</a>
+                </li>
+                <li>
+                    <a href="#list">List of Distributions</a>
+                </li>
+            </ul>
 
 
-    <p class="lead ml-5">The difference between linux distributions is often how the user interacts with the system. 
-        To demonstrate, (Figure 2) below we have Ubuntu 18.04 (left) and OpenSUSE Tumbleweed (right). You can use the 
-        slider at the bottom to compare how their interfaces differ.
-    </p>
-    
-    <div id="comparison">
-        <figure>
-            <div id="divisor"></div>
-        </figure>
-        <input type="range" min="0" max="100" value="50" id="slider" oninput="moveDivisor()">
-    </div>
-    <figcaption class="figure-caption">Screenshots from (left to right)</figcaption>
-    <figcaption class="figure-caption">omgubuntu - How to Get Nautilus 'Type Ahead Search' Back in Ubuntu 18.04 LTS</figcaption>
-    <figcaption class="figure-caption">Deviantart Duschaan openSUSE Tumbleweed</figcaption>
-    <br>
-    <p class="lead ml-5">Ubuntu and OpenSUSE are examples of two different distros developed by two different companies,
-         Canonical Ltd. and SUSE respectively. They take very different approaches to the user interface. While both
-          interfaces include most of the same features functionally, OpenSUSE uses the <a href="https://kde.org/">KDE</a> 
-          interface, which according to diffen.com, follows a similar format of the Windows UI while Ubuntu uses the 
-          <a href="https://www.gnome.org/">GNOME</a> interface which has it's own philosophy and design for graphical user interfaces.
-           <a href="https://www.diffen.com/difference/GNOME_vs_KDE"><small>source</small></a>
-    </p>
+            <h3 id="what" class="text-primary"> What is a Linux distribution?
+            </h3>
+            <p class="lead ml-5">To be clear, "distro" is just short for
+                "distribution".
+            </p>
+            <p class="lead ml-5">In short a distribution is just a
+                variation of linux configured and implemented
+                differently.
+            </p>
+            <p class="lead ml-5">There are many many linux distros out there.
+                Thousands of linux distributions have been
+                developed by corporations, governments, non-profits, and
+                hobbyists to fill specific niches. To illustrate this here
+                is <a
+                    href="https://distrowatch.com/dwres.php?resource=family-tree">
+                    linux.picture's </a>
+                "Periodic Table of Distros" (Figure 1). To make matters worse
+                the
+                periodic table is actually a simplified and slimmed down picture
+                of Linux distros. For a full family tree
+                of linux distributions see
+                <a
+                    href="https://distrowatch.com/images/other/distro-family-tree.png">DistroWatch's
+                    family tree image</a>.
+                It's really mind blowing to look at. </p>
+            <figure class="figure">
+                <img class="img-fluid" style="width: 90vw; max-height: 60%;
+                    max-width: 960px; display: block;"
+                    src="periodic-table-of-distro-edit.png" alt="Card image">
+                <figcaption class="figure-caption">Visual family tree of Linux
+                    distributions DistroWatch.com taken from linux.pictures</figcaption>
+            </figure>
 
 
-    <h3 id="does" class="text-primary">Does it matter which distro I use?</h3>
+            <p class="lead ml-5">The difference between linux distributions is
+                often how the user interacts with the system.
+                To demonstrate, (Figure 2) below we have Ubuntu 18.04 (left) and
+                OpenSUSE Tumbleweed (right). You can use the
+                slider at the bottom to compare how their interfaces differ.
+            </p>
 
-         
-    <p class="lead ml-5">
-        In general it doesn't matter what your first Linux distribution is as long as it's user-friendly. <a href="#list"> below</a> is a 
-        list of distros that are safe for new users and a list of distros that new users should avoid. This list is 
-        based on my personal experience with Linux and hearing the stories of new users. However do note that there are a lot of distributions with a niche use case 
-        that you might like to use which I do not list. If you are interested in finding something specific for your use
-         case such as a scientific Linux distro take a look at <a href="https://distrochooser.de/en">distrochooser</a>, 
-         a website with a quiz which finds a distro that matches your use case.
-    </p>
+            <div id="comparison">
+                <figure>
+                    <div id="divisor"></div>
+                </figure>
+                <input type="range" min="0" max="100" value="50" id="slider"
+                    oninput="moveDivisor()">
+            </div>
+            <figcaption class="figure-caption">Screenshots from (left to right)</figcaption>
+            <figcaption class="figure-caption">omgubuntu - How to Get Nautilus
+                'Type Ahead Search' Back in Ubuntu 18.04 LTS</figcaption>
+            <figcaption class="figure-caption">Deviantart Duschaan openSUSE
+                Tumbleweed</figcaption>
+            <br>
+            <p class="lead ml-5">Ubuntu and OpenSUSE are examples of two
+                different distros developed by two different companies,
+                Canonical Ltd. and SUSE respectively. They take very different
+                approaches to the user interface. While both
+                interfaces include most of the same features functionally,
+                OpenSUSE uses the <a href="https://kde.org/">KDE</a>
+                interface, which according to diffen.com, follows a similar
+                format of the Windows UI while Ubuntu uses the
+                <a href="https://www.gnome.org/">GNOME</a> interface which has
+                it's own philosophy and design for graphical user interfaces.
+                <a href="https://www.diffen.com/difference/GNOME_vs_KDE"><small>source</small></a>
+            </p>
 
-     <h3 id="list" class="text-primary">List of Distros</h3>
-     <p>Note: This list is too vast to link to all the distributions. To find one just google search the name or
-          alternatively head on over to  <a href="https://distrowatch.com/">Distrowatch</a>, where you can search and 
-        browse distros.</p>
-     
-     <ul>
-        <h4 class="text-primary">Recommended</h4>
-        <p class="text-info">For the purpose of this website I will recommend Kubuntu 18.04 LTS and I will include step by step instructions to 
-            installing it on <a href="install.html">the install page</a></p>
-        <li>Kubuntu 18.04 LTS</li>
-    </ul>
 
-     <ul>
-            <h4 class="text-success">Decent Hardware (last 5 years)</h4>
-            <p class="text-info">These are distributions you could run on most hardware. If you have an old or minimal PC please refer to the next list. </p>
-        <li>Ubuntu (all the Ubuntu flavors. Kubuntu, Lubuntu Xubuntu etc.)
-            (I recommend using LTS for best software support),</li>
-        <li>Linux Mint (Cinnamon Edition Recommended)</li>
-        <li>Fedora Linux</li>
-        <li>Manjaro Linux</li>
-        <li>ZorinOS (highly recommend the paid edition if you have the money. They provide you with good support and the
-             money goes towards improving the linux desktop experience 
-             <a href="https://zorinos.com/about/"><small>source</small></a>)</li>
-        <li>Solus</li>
-        <li>Deepin</li>
-    </ul>
-    <ul>
-            <h4 class="text-success">Old Hardware</h4>
-            <p class="text-info">These distros are lightweight and minimal. Excellent for old hardware and netbooks </p>
-    <li>Lubuntu</li>
-	<li>Xubuntu</li>
-	<li>WattOS R10 (not the microwatt edition) [According to the wattOS about page it is a distro focused on using less power and battery saving thus only use if you intend to get better battery life <a href="http://planetwatt.com/new/index.php/about/"><small>source</small></a>] </li>
-	<li>SolydX</li>
-	<li>Linux Lite</li>
-	<li>PeppermintOS</li>
-	<li>Puppy Linux (only for <b><i>REALLY</i></b> old hardware)</li>
-    </ul>
-    <ul>
-        <h3 class="text-danger">Distros To Avoid for New Users</h3>
-        <p class="text-warning">These distros in my experience are generally unfriendly to new users despite being recommended by long time users quite often</p>
-            <li>Arch Linux (Has no graphical installer)</li>
-            <li>default debian (not particularly difficult to use however lacks basic configuration)</li>
-            <li>Gentoo (no graphical installer, all software compiled from source)</li>
-            <li>Anything that uses the i3 desktop (the i3 desktop is fully keyboard controlled and has a learning curve)</li>
-            <li>CentOS (While usable as a desktop OS, CentOS is primarily for servers and has strict security constraints which make it difficult to use without knowlege)</li>
-            <li>Alpine Linux (server OS)</li>
-            <li>Damn Small Linux (extremely minimalist distro meant for hobbyists)</li>
-            <li>TInyCore (Similar to Damn Small) </li>
-            <li>Kali Linux (this is a distribution for ethical hacking not a general purpose OS)</li>
-            <li>Slackware</li>
-            <li>FreeBSD (Not user friendly and also not Linux)</li>
-        </ul>
-</div>
-<script src="script.js"></script>
-</body>
+            <h3 id="does" class="text-primary">Does it matter which distro I
+                use?</h3>
+
+
+            <p class="lead ml-5">
+                In general it doesn't matter what your first Linux distribution
+                is as long as it's user-friendly. <a href="#list"> Below</a> is
+                a
+                list of distros that are safe for new users and a list of
+                distros that new users should avoid. This list is
+                based on my personal experience with Linux and hearing the
+                stories of new users. However do note that there are a lot of
+                distributions with a niche use case
+                that you might like to use which I do not list. If you are
+                interested in finding something specific for your use
+                case such as a scientific Linux distro take a look at <a
+                    href="https://distrochooser.de/en">distrochooser</a>,
+                a website with a quiz which finds a distro that matches your use
+                case.
+            </p>
+
+            <h3 id="list" class="text-primary">List of Distros</h3>
+            <p>Note: This list is too vast to link to all the distributions. To
+                find one just google search the name or
+                alternatively head on over to <a
+                    href="https://distrowatch.com/">Distrowatch</a>, where you
+                can search and
+                browse distros.</p>
+
+            <ul>
+                <h4 class="text-primary">Recommended</h4>
+                <p class="text-info">For the purpose of this website I will
+                    recommend Kubuntu 18.04 LTS and I will include step by step
+                    instructions to
+                    installing it on <a href="install.html">the install page</a></p>
+                <li>Kubuntu 18.04 LTS</li>
+            </ul>
+
+            <ul>
+                <h4 class="text-success">Decent Hardware (last 5 years)</h4>
+                <p class="text-info">These are distributions you could run on
+                    most hardware. If you have an old or minimal PC please refer
+                    to the next list. </p>
+                <li>Ubuntu (all the Ubuntu flavors. Kubuntu, Lubuntu Xubuntu
+                    etc.)
+                    (I recommend using LTS for best software support),</li>
+                <li>Linux Mint (Cinnamon Edition Recommended)</li>
+                <li>Fedora Linux</li>
+                <li>Manjaro Linux</li>
+                <li>ZorinOS (highly recommend the paid edition if you have the
+                    money. They provide you with good support and the
+                    money goes towards improving the linux desktop experience
+                    <a href="https://zorinos.com/about/"><small>source</small></a>)</li>
+                <li>Solus</li>
+                <li>Deepin</li>
+            </ul>
+            <ul>
+                <h4 class="text-success">Old Hardware</h4>
+                <p class="text-info">These distros are lightweight and minimal.
+                    Excellent for old hardware and netbooks </p>
+                <li>Lubuntu</li>
+                <li>Xubuntu</li>
+                <li>WattOS R10 (not the microwatt edition) [According to the
+                    wattOS about page it is a distro focused on using less power
+                    and battery saving thus only use if you intend to get better
+                    battery life <a
+                        href="http://planetwatt.com/new/index.php/about/"><small>source</small></a>]
+                </li>
+                <li>SolydX</li>
+                <li>Linux Lite</li>
+                <li>PeppermintOS</li>
+                <li>Puppy Linux (only for <b><i>REALLY</i></b> old hardware)</li>
+            </ul>
+            <ul>
+                <h3 class="text-danger">Distros To Avoid for New Users</h3>
+                <p class="text-warning">These distros in my experience are
+                    generally unfriendly to new users despite being recommended
+                    by long time users quite often</p>
+                <li>Arch Linux (Has no graphical installer)</li>
+                <li>default debian (not particularly difficult to use however
+                    lacks basic configuration)</li>
+                <li>Gentoo (no graphical installer, all software compiled from
+                    source)</li>
+                <li>Anything that uses the i3 desktop (the i3 desktop is fully
+                    keyboard controlled and has a learning curve)</li>
+                <li>CentOS (While usable as a desktop OS, CentOS is primarily
+                    for servers and has strict security constraints which make
+                    it difficult to use without knowlege)</li>
+                <li>Alpine Linux (server OS)</li>
+                <li>Damn Small Linux (extremely minimalist distro meant for
+                    hobbyists)</li>
+                <li>TInyCore (Similar to Damn Small) </li>
+                <li>Kali Linux (this is a distribution for ethical hacking not a
+                    general purpose OS)</li>
+                <li>Slackware</li>
+                <li>FreeBSD (Not user friendly and also not Linux)</li>
+            </ul>
+        </div>
+        <script src="script.js"></script>
+    </body>
 </html>
