@@ -28,6 +28,7 @@
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            
 
             <div class="collapse navbar-collapse" id="navbarColor03">
                 <ul class="navbar-nav mr-auto">
@@ -60,17 +61,28 @@
             </div>
         </nav>
 
-        <div class="jumbotron">
+        <div class="jumbotron" style="max-width: 960px; width: 90vw;">
             <h2 id="otherdistros" class="text-primary">Other distros</h2>
-
-            <p class="text-warning">If you choose to install something other
-                than Kubuntu 18.04 then you need to head to the home page of
-                your distro and follow their instructions. I will be providing
-                step by step instructions to install and set up Kubuntu here
-                however.</p>
+                <div class="alert alert-info">
+                        <span class="badge badge-pill badge-info">Note</span>
+                        If you choose to install something other
+                        than Kubuntu 18.04 then you need to head to the home page of
+                        your distro and follow their instructions. I will be providing
+                        step by step instructions to install and set up Kubuntu here
+                        however.
+                    </div>
+                
 
             <h2 id="installingkubuntu1804lts" class="text-primary">Installing
                 Kubuntu 18.04 LTS</h2>
+                <div class="alert alert-info">
+                        <span class="badge badge-pill badge-info">Note</span>
+                       this installation is for the most
+                common and default user installation. If you have advanced user
+                needs such as advanced disk partitioning or encryption please
+                take the time to read the full user manual at
+                https://kubuntu.org/support/
+                    </div>
 
             <h3 id="prerequisites" class="text-primary">Prerequisites</h3>
 
@@ -83,10 +95,13 @@
                     wiped.
 
                     <ul>
-                        <li>Be advised that installing Linux using these
+                        <li><div class="alert alert-warning">
+                                <span class="badge badge-pill badge-warning">Caution</span>
+                                Be advised that installing Linux using these
                             instructions will wipe all the data on your PC or
                             laptop to start fresh. So make sure important data
-                            is backed up.</li></ul>
+                            is backed up.
+                            </div></li></ul>
                 </li>
 
                 <li>A PC with an operating system to download and write Kubuntu
@@ -135,21 +150,32 @@
                         <li><p>select your USB flash drive</p>
 
                             <ul>
-                                <li>When selecting the USB make sure you are
-                                    selecting the correct device.
+                                <div class="alert 
+                                    alert-danger">
+                                    <span class="badge badge-pill
+                                        badge-danger">Danger</span>
+                                    <li> When
+                                        selecting the USB make sure you are
+                                        selecting the correct device.
 
 
-                                    <ul>
-                                        <li>Consider just unplugging any other
-                                            USB storage devices to make sure you
-                                            selected the correct one</li>
-
-                                        <li>Etcher will not under normal
-                                            circumstances show your local drives
-                                            as an option so there is no reason
-                                            to fear accidentally writing to your
-                                            local disk. </li></ul>
-                                </li></ul></li>
+                                        <ul>
+                                            <li>Consider just unplugging any
+                                                other
+                                                USB storage devices to make sure
+                                                you
+                                                selected the correct one</li>
+                                            <li>Etcher will not under normal
+                                                circumstances show your local
+                                                drives
+                                                as an option so there is no
+                                                reason
+                                                to fear accidentally writing to
+                                                your
+                                                local disk. </li></ul>
+                                    </li>
+                                </div>
+                            </ul></li>
 
                         <li><p>Click "Flash" and wait for etcher to finish
                                 writing to the disk. </p></li>
@@ -199,10 +225,7 @@
                                 you need to get some work done while you wait
                                 for the installation. </p>
 
-                            <p><ul>
-                                    <li>This is a perk of Linux. Windows and
-                                        MacOSX do not provide this "Live USB"
-                                        option.</li></ul>
+                            <p>
                             </li></ul></p>
 
                     <p></li></p>
@@ -228,11 +251,16 @@
                         <p><li>Select "Guided- use entire disk"</p>
 
                             <p><ul>
-                                    <li>WARNING: From here on out you will be
-                                        wiping all data on your local disk. If
-                                        you still have sensitive data that
-                                        hasn't been backed up please shutdown
-                                        the PC and do so then restart. </li></ul>
+                                    <li><div class="alert
+                                        alert-danger">
+                                        <span class="badge badge-pill
+                                            badge-danger">WARNING</span>
+                                            From here on out you will be
+                                            wiping all data on your local disk. If
+                                            you still have sensitive data that
+                                            hasn't been backed up please shutdown
+                                            the PC and do so then restart. 
+                                    </div></li></ul>
                             </li></p>
 
                         <p><li>Click "Install Now"</li></ol></p>
@@ -282,10 +310,16 @@
                         <p><li>Enter a "computer name"</p>
 
                             <p><ul>
-                                    <li>This is the name your computer will
+                                    <li>
+                                            <div class="alert
+                                            alert-light">
+                                            <span class="badge badge-pill
+                                                badge-light">Note</span>
+                                                This is the name your computer will
                                         broadcast on the network. If you value
                                         your privacy choose a name that will not
-                                        identify you.</li></ul>
+                                        identify you.
+                                        </div></li></ul>
                             </li></p>
 
                         <p><li>Click Continue</li></ol></p>
@@ -302,9 +336,9 @@
                         <p><li>Once it's shutting down unplug the USB and press
                                 enter</p>
 
-                            <p><ol>
+                            <p><ul>
                                     <li>If it gets stuck on the shutdown
-                                        sequence just reboot the PC manually.</li></ol>
+                                        sequence just reboot the PC manually.</li></ul>
                             </li></ol></p>
 
                     <p></li></p>
@@ -318,7 +352,7 @@
                     <p></li></p>
 
                 <p><li><p>If you require graphics drivers for your tasks head on
-                            over to drivers.</p></li>
+                            over to <a href="/drivers.html">drivers</a>.</p></li>
                 </ol></p>
         </div>
     </body>
